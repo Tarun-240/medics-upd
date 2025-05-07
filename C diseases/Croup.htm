@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css"
+      rel="stylesheet"
+    /><link rel="icon" type="image/png" href="/Medics/Photos/Medics.png">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/Medics/styles.css" />
+    <title>Croup</title>
+    <style>
+        
+        body {
+            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            background-color: #f4f9f9;
+            margin: 0;
+            padding: 0; /* Remove default body padding */
+            color: #333;
+            display: flex;
+            flex-direction: column; /* Stack header, main content, and footer */
+            min-height: 100vh; /* Ensure the body takes at least the full viewport height */
+        }
+
+    
+
+        .nav__container {
+            max-width: var(--max-width);
+            margin: 0 auto; /* Center the navbar */
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .nav__logo {
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: var(--white);
+        }
+
+        .nav__logo span {
+            color: var(--secondary-color);
+        }
+
+        .nav__links {
+            list-style: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 2rem;
+        }
+
+        .link a {
+            padding: 0.5rem;
+            color: var(--primary-color-light);
+        }
+
+        .link a:hover {
+            color: var(--white);
+        }
+
+        .btn {
+            padding: 0.75rem 2rem;
+            outline: none;
+            border: none;
+            font-size: 1rem;
+            white-space: nowrap;
+            color: var(--white);
+            background-color: var(--secondary-color);
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .main-content {
+            display: flex;
+            max-width: 1200px;
+            margin: 30px auto; /* Center the main content with top/bottom margin */
+            padding: 0 30px; /* Add horizontal padding for the main content */
+            gap: 80px;
+            flex-grow: 1; /* Allow main content to grow and push footer down */
+        }
+
+        .container {
+            max-width: 700px;
+            background-color: white;
+            padding: 30px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        h1 {
+            color: #00695c;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        h2 {
+            color: #46BCA6;
+            margin-top: 30px;
+            margin-bottom: 10px;
+        }
+
+        p {
+            margin-bottom: 15px;
+        }
+
+        ul {
+            margin-left: 20px;
+        }
+
+        .treatment-box {
+            background-color: #e8f5e9; /* Light green background */
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+            width: 300px; /* Fixed width for the box */
+            position: sticky; /* Keep it visible while scrolling */
+            top: 20px; /* Adjust as needed */
+            align-self: flex-start; /* Align to the top of the container */
+        }
+
+        .treatment-box h2 {
+            color: #388e3c; /* Darker green for heading */
+            margin-top: 0;
+        }
+
+
+        @media (max-width: 768px) {
+            .main-content {
+                flex-direction: column; /* Stack main content and treatment box */
+                padding: 0 20px;
+                gap: 30px;
+            }
+
+            .treatment-box {
+                width: 100%; /* Make the box full width */
+                position: static; /* No sticky positioning */
+                margin-top: 20px; /* Add some top margin */
+            }
+
+            .container {
+                max-width: 100%; /* Make container full width on smaller screens */
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="section__container nav__container">
+            <div class="nav__logo">Med<span>ics</span></div>
+              <img src="/Medics/Photos/WhatsApp Image 2025-05-07 at 21.07.38.jpeg" id="pic">
+        <ul class="nav__links">
+                <li class="link"><a href="../index.html">Home</a></li>
+                <li class="link"><a href="../About Us.html">About Us</a></li>
+                <li class="link"><a href="../A-Z.html">Services</a></li>
+                
+            </ul>
+            <button class="btn">Contact Us</button>
+            </nav>
+    </header>
+    <div class="main-content">
+        <div class="container">
+		<h1>Croup</h1>
+
+        <h2>About Croup</h2>
+        <p>
+            Croup is a respiratory condition that primarily affects young children. It is characterized by inflammation of the larynx (voice box) and trachea (windpipe), which leads to a distinctive barking cough, stridor (a high-pitched, noisy breathing sound), and hoarseness.
+        </p>
+        <p>
+            Croup is most common in children between 6 months and 3 years old, but it can occur in older children and, rarely, in adults. It is typically caused by a viral infection.
+        </p>
+
+        <h2>Symptoms of Croup</h2>
+        <p>
+            The hallmark symptoms of croup include:
+        </p>
+        <ul>
+            <li>Barking cough: Often described as a seal-like or "barking" cough.</li>
+            <li>Stridor: A high-pitched, noisy breathing sound, usually heard during inhalation.</li>
+            <li>Hoarseness: Difficulty speaking, with a raspy or rough voice.</li>
+            <li>Difficulty breathing: Rapid or labored breathing.</li>
+        </ul>
+        <p>
+            Other symptoms that may accompany croup include:
+        </p>
+        <ul>
+            <li>Fever</li>
+            <li>Runny nose</li>
+            <li>Sore throat</li>
+        </ul>
+        <p>
+            Symptoms are often worse at night and may be aggravated by crying or agitation. In most cases, croup is mild, but severe cases can lead to significant breathing difficulties.
+        </p>
+
+        <h2>Causes of Croup</h2>
+        <p>
+            Croup is most commonly caused by viral infections. The most frequent culprit is:
+        </p>
+        <ul>
+            <li>Parainfluenza viruses: These viruses are responsible for the majority of croup cases.</li>
+        </ul>
+        <p>
+            Other viruses that can cause croup include:
+        </p>
+        <ul>
+            <li>Respiratory syncytial virus (RSV)</li>
+            <li>Influenza viruses (flu)</li>
+            <li>Adenoviruses</li>
+            <li>Rhinoviruses (common cold)</li>
+        </ul>
+        <p>
+            In rare cases, croup can be caused by bacterial infections, but this is less common and usually associated with a more severe form of the illness.
+        </p>
+
+        <h2>Risk Factors for Croup</h2>
+        <p>
+            Certain factors can increase the risk of developing croup:
+        </p>
+        <ul>
+            <li>Age: Children between 6 months and 3 years old are most commonly affected due to their narrow airways.</li>
+            <li>Season: Croup is more common in the fall and winter months.</li>
+            <li>Weakened immune system: Children with a history of respiratory infections or those with a compromised immune system may be more susceptible.</li>
+        </ul>
+
+        <h2>Diagnosing Croup</h2>
+        <p>
+            Croup is usually diagnosed based on a physical examination and the characteristic symptoms, particularly the barking cough and stridor.
+        </p>
+        <p>
+            A doctor will typically:
+        </p>
+        <ul>
+            <li>Listen to the child's breathing: To identify the barking cough and stridor.</li>
+            <li>Examine the throat: To check for redness or swelling.</li>
+            <li>Check for other symptoms: Such as fever or runny nose.</li>
+        </ul>
+        <p>
+            In most cases, further tests are not needed. However, in severe cases or if the diagnosis is unclear, the doctor may order:
+        </p>
+        <ul>
+            <li>X-ray: To rule out other conditions, such as pneumonia or a foreign object in the airway.</li>
+            <li>Pulse oximetry: To measure the oxygen level in the blood.</li>
+        </ul>
+
+        <h2>Treating Croup</h2>
+        <p>
+            Most cases of croup are mild and can be managed at home. Treatment focuses on relieving symptoms and ensuring the child's breathing is not severely compromised.
+        </p>
+        <p>
+            Home care for mild croup:
+        </p>
+        <ul>
+            <li>Cool mist: Using a cool-mist humidifier or taking the child into a steamy bathroom can help soothe the airway and ease breathing.</li>
+            <li>Comforting the child: Keeping the child calm can help reduce crying, which can worsen symptoms.</li>
+            <li>Fluids: Encourage the child to drink plenty of fluids to stay hydrated.</li>
+            <li>Rest: Ensure the child gets adequate rest.</li>
+        </ul>
+        <p>
+            Medical treatment for moderate to severe croup:
+        </p>
+        <ul>
+            <li>Corticosteroids: Oral corticosteroids, such as dexamethasone, are often prescribed to reduce inflammation in the airway. A single dose can significantly improve symptoms.</li>
+            <li>Nebulized epinephrine: In more severe cases, nebulized epinephrine (adrenaline) may be given to open up the airway. This provides rapid but temporary relief.</li>
+            <li>Oxygen therapy: If the child is having difficulty breathing or has low oxygen levels.</li>
+            <li>Hospitalization: Severe cases may require hospitalization for close monitoring and treatment, including oxygen, nebulized epinephrine, and intravenous fluids.</li>
+        </ul>
+
+        <h2>Complications of Croup</h2>
+        <p>
+            Most cases of croup resolve without complications. However, in rare cases, complications can occur:
+        </p>
+        <ul>
+            <li>Severe breathing difficulties: This is the most serious complication and may require hospitalization and intensive treatment.</li>
+            <li>Secondary bacterial infection: Such as bacterial tracheitis, which can cause severe airway obstruction.</li>
+            <li>Pneumonia: Lung infection.</li>
+        </ul>
+
+        <h2>Prevention of Croup</h2>
+        <p>
+            Since croup is often caused by viruses, the following measures can help reduce the risk of infection:
+        </p>
+        <ul>
+            <li>Hand hygiene: Frequent handwashing with soap and water can help prevent the spread of viruses.</li>
+            <li>Avoid contact with sick individuals: Keep children away from people who have respiratory infections.</li>
+            <li>Vaccinations: Ensure children are up-to-date on recommended vaccinations, including the flu vaccine, which can help prevent some viral respiratory infections.</li>
+        </ul>
+    </div>
+
+    <div class="treatment-box">
+        <h2>Treating Croup</h2>
+        <p>
+            Treatment depends on the severity of croup.
+        </p>
+        <ul>
+            <li>Home care for mild croup
+                <ul>
+                    <li>Cool mist</li>
+                    <li>Comforting the child</li>
+                    <li>Fluids</li>
+                    <li>Rest</li>
+                </ul>
+            </li>
+            <li>Medical treatment for moderate to severe croup
+                <ul>
+                    <li>Corticosteroids</li>
+                    <li>Nebulized epinephrine</li>
+                    <li>Oxygen therapy</li>
+                    <li>Hospitalization</li>
+                </ul>
+            </li>
+        </ul>
+        <h2>Prevention</h2>
+        <ul>
+            <li>Hand hygiene</li>
+            <li>Avoid contact with sick individuals</li>
+            <li>Vaccinations</li>
+        </ul>
+    </div>						
+                    </div>
+    </div>
+    <footer class="footer">
+        <div class="section__container footer__container">
+            <div class="footer__col">
+                <h3>Health<span>Care</span></h3>
+                <p>
+                    We are honored to be a part of your healthcare journey and committed
+                    to delivering compassionate, personalized, and top-notch care every
+                    step of the way.
+                </p>
+                <p>
+                    Trust us with your health, and let us work together to achieve the
+                    best possible outcomes for you and your loved ones.
+                </p>
+            </div>
+            <div class="footer__col">
+                <h4> About Us</h4>
+                <p>Home</p>
+                <p>About Us</p>
+                <p>Work With Us</p>
+                <p>Our Blog</p>
+                <p>Terms & Conditions</p>
+            </div>
+            <div class="footer__col">
+                <h4>Services</h4>
+                <p>Search Terms</p>
+                <p>Advance Search</p>
+                <p>Privacy Policy</p>
+                <p>Suppliers</p>
+                <p>Our Stores</p>
+            </div>
+            <div class="footer__col">
+                <h4>Contact Us</h4>
+                <p>
+                    <i class="ri-map-pin-2-fill"></i> Vignan's Institute of Information Technology,Duvvada
+                </p>
+                <p><i class="ri-mail-fill"></i> support@care.com</p>
+                <p><i class="ri-phone-fill"></i> 0891-123-4567</p>
+            </div>
+        </div>
+        <div class="footer__bar">
+            <div class="footer__bar__content">
+                <p>Copyright © . All rights reserved.</p>
+                <div class="footer__socials">
+                    <span><i class="ri-instagram-line"></i></span>
+                    <span><i class="ri-facebook-fill"></i></span>
+                    <span><i class="ri-heart-fill"></i></span>
+                    <span><i class="ri-twitter-fill"></i></span>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="icon" type="image/png" href="/Medics/Photos/Medics.png">
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css"
+      rel="stylesheet"
+    /><link rel="icon" type="image/png" href="/Medics/Photos/Medics.png">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/Medics/styles.css" />
+    <title>Scarlet Fever</title>
+    <style>
+        
+        body {
+            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            background-color: #f4f9f9;
+            margin: 0;
+            padding: 0; /* Remove default body padding */
+            color: #333;
+            display: flex;
+            flex-direction: column; /* Stack header, main content, and footer */
+            min-height: 100vh; /* Ensure the body takes at least the full viewport height */
+        }
+
+    
+
+        .nav__container {
+            max-width: var(--max-width);
+            margin: 0 auto; /* Center the navbar */
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .nav__logo {
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: var(--white);
+        }
+
+        .nav__logo span {
+            color: var(--secondary-color);
+        }
+
+        .nav__links {
+            list-style: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 2rem;
+        }
+
+        .link a {
+            padding: 0.5rem;
+            color: var(--primary-color-light);
+        }
+
+        .link a:hover {
+            color: var(--white);
+        }
+
+        .btn {
+            padding: 0.75rem 2rem;
+            outline: none;
+            border: none;
+            font-size: 1rem;
+            white-space: nowrap;
+            color: var(--white);
+            background-color: var(--secondary-color);
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .main-content {
+            display: flex;
+            max-width: 1200px;
+            margin: 30px auto; /* Center the main content with top/bottom margin */
+            padding: 0 30px; /* Add horizontal padding for the main content */
+            gap: 80px;
+            flex-grow: 1; /* Allow main content to grow and push footer down */
+        }
+
+        .container {
+            max-width: 700px;
+            background-color: white;
+            padding: 30px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        h1 {
+            color: #00695c;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        h2 {
+            color: #46BCA6;
+            margin-top: 30px;
+            margin-bottom: 10px;
+        }
+
+        p {
+            margin-bottom: 15px;
+        }
+
+        ul {
+            margin-left: 20px;
+        }
+  
+
+        .treatment-box {
+            background-color: #e8f5e9; /* Light green background */
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+            width: 300px; /* Fixed width for the box */
+            position: sticky; /* Keep it visible while scrolling */
+            top: 20px; /* Adjust as needed */
+            align-self: flex-start; /* Align to the top of the container */
+        }
+
+        .treatment-box h2 {
+            color: #388e3c; /* Darker green for heading */
+            margin-top: 0;
+        }
+
+
+        @media (max-width: 768px) {
+            .main-content {
+                flex-direction: column; /* Stack main content and treatment box */
+                padding: 0 20px;
+                gap: 30px;
+            }
+
+            .treatment-box {
+                width: 100%; /* Make the box full width */
+                position: static; /* No sticky positioning */
+                margin-top: 20px; /* Add some top margin */
+            }
+
+            .container {
+                max-width: 100%; /* Make container full width on smaller screens */
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="section__container nav__container">
+            <div class="nav__logo">Med<span>ics</span></div>
+              <img src="/Medics/Photos/WhatsApp Image 2025-05-07 at 21.07.38.jpeg" id="pic">
+        <ul class="nav__links">
+              <li class="link"><a href="/Medics/index.html">Home</a></li>
+                <li class="link"><a href="/Medics/About Us.html">About Us</a></li>
+                <li class="link"><a href="/Medics/A-Z.html">Services</a></li>
+                <li class="link"><a href="/Medics/search.htm">Search</a></li>
+            </ul>
+            <button class="btn">Contact Us</button>
+            </nav>
+    </header>
+    <div class="main-content">
+        <div class="container">
+         <h2>Understanding Scarlet Fever</h2>
+        <p>
+            Scarlet fever is a bacterial illness that develops in some people who have strep throat. It's caused by the same bacteria – group A Streptococcus (group A strep). The distinctive symptom of scarlet fever is a bright red rash that feels like sandpaper. Scarlet fever is most common in children between 5 and 15 years old.
+        </p>
+        <p>
+            While scarlet fever was once a serious childhood illness, it is now easily treated with antibiotics. However, if left untreated, it can lead to more serious complications.
+        </p>
+
+        <h2>Common Symptoms</h2>
+        <p>
+            Scarlet fever typically develops after a person has strep throat. The characteristic symptoms include:
+        </p>
+        <ul>
+            <li>**Red rash:** This is the most distinctive sign. It usually starts on the neck and chest, then spreads over the body. The rash is fine and feels like sandpaper to the touch. The skin may flush and then appear bumpy.</li>
+            <li>**Flushed face:** The face may appear red, with a pale area around the mouth.</li>
+            <li>**Strawberry tongue:** The tongue may look red and bumpy, like a strawberry.</li>
+            <li>**Sore throat:** Often starts suddenly and can be painful when swallowing.</li>
+            <li>**Fever:** Usually high, often 101°F (38.3°C) or higher.</li>
+            <li>**Headache**</li>
+            <li>**Nausea or vomiting**</li>
+            <li>**Abdominal pain**</li>
+            <li>**Swollen tonsils:** May be red and have white or yellow patches.</li>
+            <li>**Swollen lymph nodes in the neck**</li>
+            <li>**Peeling skin:** As the rash fades, the skin on the fingers, toes, and groin area may peel.</li>
+        </ul>
+        <p>
+            Not everyone with strep throat will develop scarlet fever. The rash occurs in people who are infected with strep bacteria that produce a toxin (poison) and whose bodies are sensitive to that toxin.
+        </p>
+
+        <h2>Transmission</h2>
+        <p>
+            Scarlet fever is contagious and spreads through:
+        </p>
+        <ul>
+            <li>**Droplets expelled when an infected person coughs or sneezes.**</li>
+            <li>**Direct contact with the saliva or nasal secretions of an infected person.**</li>
+            <li>**Less commonly, through contact with contaminated objects.**</li>
+        </ul>
+        <p>
+            The incubation period (the time between exposure and the start of symptoms) for scarlet fever is usually 2 to 5 days. A person with scarlet fever is typically contagious until they have been on antibiotics for 24 hours and are no longer feverish.
+        </p>
+
+        <h2>Diagnosis</h2>
+        <p>
+            Scarlet fever is usually diagnosed based on a physical examination, especially the characteristic rash and other symptoms. To confirm the diagnosis, a healthcare provider will typically perform a test for strep throat:
+        </p>
+        <ul>
+            <li>**Throat swab:** A sample of secretions is taken from the back of the throat and tested for group A strep bacteria. This can be done with a rapid strep test in the clinic or sent to a lab for a culture.</li>
+        </ul>
+        <p>
+            A positive strep test in someone with the signs and symptoms of scarlet fever confirms the diagnosis.
+        </p>
+
+        <h2>Treatment</h2>
+        <p>
+            Scarlet fever is treated with antibiotics to kill the strep bacteria. Treatment typically involves:
+        </p>
+        <ul>
+            <li>**Oral antibiotics:** Penicillin or amoxicillin are commonly prescribed. For people allergic to penicillin, other antibiotics like azithromycin, clarithromycin, or clindamycin may be used.</li>
+            <li>**Completing the full course of antibiotics:** It's crucial to take all the prescribed medication, even if symptoms improve quickly, to ensure the bacteria are completely eliminated and to prevent complications.</li>
+        </ul>
+        <p>
+            Supportive care to relieve symptoms includes:
+        </p>
+        <ul>
+            <li>**Rest:** Getting plenty of rest to help the body recover.</li>
+            <li>**Fluids:** Drinking plenty of liquids to prevent dehydration.</li>
+            <li>**Pain relievers:** Over-the-counter medications like acetaminophen (paracetamol) or ibuprofen can help reduce fever and sore throat pain. Aspirin should not be given to children or teenagers due to the risk of Reye's syndrome.</li>
+            <li>**Soothing throat remedies:** Gargling with warm salt water, drinking warm liquids like tea with honey, or sucking on throat lozenges can help soothe a sore throat.</li>
+            <li>**Cool compresses:** Applying cool compresses to the skin can help relieve discomfort from the fever.</li>
+        </ul>
+
+        <h2>Possible Complications</h2>
+        <p>
+            If left untreated, scarlet fever can lead to more serious complications, including:
+        </p>
+        <ul>
+            <li>**Rheumatic fever:** A serious inflammatory condition that can affect the heart, joints, brain, and skin.</li>
+            <li>**Kidney problems (post-streptococcal glomerulonephritis).**</li>
+            <li>**Ear infections.**</li>
+            <li>**Sinus infections.**</li>
+            <li>**Skin infections (impetigo).**</li>
+            <li>**Throat abscesses.**</li>
+        </ul>
+        <p>
+            Prompt treatment with antibiotics significantly reduces the risk of these complications.
+        </p>
+
+        <h2>Prevention</h2>
+        <p>
+            There is no vaccine for scarlet fever. The best way to prevent its spread is to:
+        </p>
+        <ul>
+            <li>**Practice good hygiene:** Wash hands frequently with soap and water for at least 20 seconds, especially after coughing or sneezing and before eating.</li>
+            <li>**Cover coughs and sneezes:** Use a tissue or the crook of your elbow.</li>
+            <li>**Avoid sharing eating utensils, drinks, and personal items.**</li>
+            <li>**Stay home if you are sick:** To prevent spreading the infection to others.</li>
+            <li>**Complete the full course of antibiotics:** If diagnosed with strep throat or scarlet fever, take all prescribed antibiotics to prevent the spread of the bacteria.</li>
+        </ul>
+    </div>
+
+    <div class="important-information-box">
+        <h2>Important Information</h2>
+        <p>
+            If you or your child develops a sandpaper-like rash, sore throat, and fever, it's important to see a doctor for diagnosis and treatment. Early treatment with antibiotics can relieve symptoms and prevent serious complications. Ensure the full course of antibiotics is completed as prescribed.
+        </p>
+    </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="section__container footer__container">
+            <div class="footer__col">
+                <h3>Health<span>Care</span></h3>
+                <p>
+                    We are honored to be a part of your healthcare journey and committed
+                    to delivering compassionate, personalized, and top-notch care every
+                    step of the way.
+                </p>
+                <p>
+                    Trust us with your health, and let us work together to achieve the
+                    best possible outcomes for you and your loved ones.
+                </p>
+            </div>
+            <div class="footer__col">
+                <h4> About Us</h4>
+                <p>Home</p>
+                <p>About Us</p>
+                <p>Work With Us</p>
+                <p>Our Blog</p>
+                <p>Terms & Conditions</p>
+            </div>
+            <div class="footer__col">
+                <h4>Services</h4>
+                <p>Search Terms</p>
+                <p>Advance Search</p>
+                <p>Privacy Policy</p>
+                <p>Suppliers</p>
+                <p>Our Stores</p>
+            </div>
+            <div class="footer__col">
+                <h4>Contact Us</h4>
+                <p>
+                    <i class="ri-map-pin-2-fill"></i> Vignan's Institute of Information Technology,Duvvada
+                </p>
+                <p><i class="ri-mail-fill"></i> support@care.com</p>
+                <p><i class="ri-phone-fill"></i> 0891-123-4567</p>
+            </div>
+        </div>
+        <div class="footer__bar">
+            <div class="footer__bar__content">
+                <p>Copyright © . All rights reserved.</p>
+                <div class="footer__socials">
+                    <span><i class="ri-instagram-line"></i></span>
+                    <span><i class="ri-facebook-fill"></i></span>
+                    <span><i class="ri-heart-fill"></i></span>
+                    <span><i class="ri-twitter-fill"></i></span>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

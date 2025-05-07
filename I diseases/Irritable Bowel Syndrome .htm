@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="icon" type="image/png" href="/Medics/Photos/Medics.png">
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css"
+      rel="stylesheet"
+    /><link rel="icon" type="image/png" href="/Medics/Photos/Medics.png">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/Medics/styles.css" />
+    <title>Irritable Bowel Syndrome</title>
+    <style>
+        
+        body {
+            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            background-color: #f4f9f9;
+            margin: 0;
+            padding: 0; /* Remove default body padding */
+            color: #333;
+            display: flex;
+            flex-direction: column; /* Stack header, main content, and footer */
+            min-height: 100vh; /* Ensure the body takes at least the full viewport height */
+        }
+
+    
+
+        .nav__container {
+            max-width: var(--max-width);
+            margin: 0 auto; /* Center the navbar */
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .nav__logo {
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: var(--white);
+        }
+
+        .nav__logo span {
+            color: var(--secondary-color);
+        }
+
+        .nav__links {
+            list-style: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 2rem;
+        }
+
+        .link a {
+            padding: 0.5rem;
+            color: var(--primary-color-light);
+        }
+
+        .link a:hover {
+            color: var(--white);
+        }
+
+        .btn {
+            padding: 0.75rem 2rem;
+            outline: none;
+            border: none;
+            font-size: 1rem;
+            white-space: nowrap;
+            color: var(--white);
+            background-color: var(--secondary-color);
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .main-content {
+            display: flex;
+            max-width: 1200px;
+            margin: 30px auto; /* Center the main content with top/bottom margin */
+            padding: 0 30px; /* Add horizontal padding for the main content */
+            gap: 80px;
+            flex-grow: 1; /* Allow main content to grow and push footer down */
+        }
+
+        .container {
+            max-width: 700px;
+            background-color: white;
+            padding: 30px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        h1 {
+            color: #00695c;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        h2 {
+            color: #46BCA6;
+            margin-top: 30px;
+            margin-bottom: 10px;
+        }
+
+        p {
+            margin-bottom: 15px;
+        }
+
+        ul {
+            margin-left: 20px;
+        }
+  
+
+        .treatment-box {
+            background-color: #e8f5e9; /* Light green background */
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+            width: 300px; /* Fixed width for the box */
+            position: sticky; /* Keep it visible while scrolling */
+            top: 20px; /* Adjust as needed */
+            align-self: flex-start; /* Align to the top of the container */
+        }
+
+        .treatment-box h2 {
+            color: #388e3c; /* Darker green for heading */
+            margin-top: 0;
+        }
+
+
+        @media (max-width: 768px) {
+            .main-content {
+                flex-direction: column; /* Stack main content and treatment box */
+                padding: 0 20px;
+                gap: 30px;
+            }
+
+            .treatment-box {
+                width: 100%; /* Make the box full width */
+                position: static; /* No sticky positioning */
+                margin-top: 20px; /* Add some top margin */
+            }
+
+            .container {
+                max-width: 100%; /* Make container full width on smaller screens */
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="section__container nav__container">
+            <div class="nav__logo">Med<span>ics</span></div>
+              <img src="/Medics/Photos/WhatsApp Image 2025-05-07 at 21.07.38.jpeg" id="pic">
+        <ul class="nav__links">
+              <li class="link"><a href="/Medics/index.html">Home</a></li>
+                <li class="link"><a href="/Medics/About Us.html">About Us</a></li>
+                <li class="link"><a href="/Medics/A-Z.html">Services</a></li>
+                <li class="link"><a href="/Medics/search.htm">Search</a></li>
+            </ul>
+            <button class="btn">Contact Us</button>
+            </nav>
+    </header>
+    <div class="main-content">
+        <div class="container">
+         <h1>Irritable Bowel Syndrome (IBS)</h1>
+
+        <h2>Understanding Irritable Bowel Syndrome</h2>
+        <p>
+            Irritable Bowel Syndrome (IBS) is a common disorder that affects the large intestine (colon). It's a chronic condition, meaning it's long-lasting, but it doesn't cause inflammation or permanent damage to the bowel like inflammatory bowel disease (IBD). The symptoms of IBS can vary widely from person to person and often fluctuate over time.
+        </p>
+
+        <h2>Common Symptoms of IBS</h2>
+        <p>
+            The main symptoms of IBS include:
+        </p>
+        <ul>
+            <li>Abdominal pain or cramping, often related to bowel movements</li>
+            <li>Changes in bowel movement frequency (more or less often than usual)</li>
+            <li>Changes in the appearance of stool (e.g., looser, harder, more watery)</li>
+            <li>Bloating</li>
+            <li>Gas (flatulence)</li>
+            <li>Urgency (a sudden, strong need to have a bowel movement)</li>
+            <li>Feeling like you haven't completely emptied your bowels</li>
+        </ul>
+        <p>
+            Some people with IBS may also experience other symptoms such as fatigue, nausea, backache, and headaches.
+        </p>
+
+        <h2>Types of IBS</h2>
+        <p>
+            IBS is often categorized into subtypes based on the predominant bowel habit:
+        </p>
+        <ul>
+            <li>**IBS with Constipation (IBS-C):** Main symptom is constipation.</li>
+            <li>**IBS with Diarrhea (IBS-D):** Main symptom is diarrhea.</li>
+            <li>**IBS with Mixed Bowel Habits (IBS-M):** Experience both constipation and diarrhea.</li>
+            <li>**IBS Unclassified (IBS-U):** Bowel habits don't fit neatly into the other categories.</li>
+        </ul>
+
+        <h2>Common Causes and Triggers of IBS</h2>
+        <p>
+            The exact cause of IBS is not fully understood, but it's believed to involve a combination of factors, including:
+        </p>
+        <ul>
+            <li>**Increased Gut Sensitivity (Visceral Hypersensitivity):** The nerves in the gut may be more sensitive, leading to pain and discomfort from normal digestive processes.</li>
+            <li>**Gut Motility Issues:** Problems with the speed and coordination of muscle contractions in the intestines can lead to diarrhea or constipation.</li>
+            <li>**Brain-Gut Axis Dysfunction:** The communication between the brain and the gut may be disrupted, affecting bowel function and pain perception.</li>
+            <li>**Small Intestinal Bacterial Overgrowth (SIBO):** An increase in the number or type of bacteria in the small intestine may contribute to symptoms.</li>
+            <li>**Food Sensitivities or Intolerances:** Certain foods can trigger IBS symptoms in some individuals. Common culprits include high-FODMAP foods, gluten, dairy, and processed foods.</li>
+            <li>**Stress and Psychological Factors:** Stress, anxiety, and depression can significantly impact IBS symptoms.</li>
+            <li>**Previous Gut Infections:** Sometimes, IBS symptoms can start after a bout of gastroenteritis (post-infectious IBS).</li>
+            <li>**Changes in Gut Microbiota:** Alterations in the balance of bacteria in the gut may play a role.</li>
+        </ul>
+
+        <h2>Diagnosis of IBS</h2>
+        <p>
+            Diagnosing IBS can be challenging as there are no specific tests to definitively identify the condition. Doctors typically rely on a combination of:
+        </p>
+        <ul>
+            <li>**Medical History and Physical Exam:** Your doctor will ask detailed questions about your symptoms, bowel habits, and medical history.</li>
+            <li>**Symptom-Based Criteria:** The Rome criteria are a set of standardized criteria used to diagnose IBS based on the type, frequency, and duration of symptoms.</li>
+            <li>**Ruling Out Other Conditions:** Doctors may order tests (such as blood tests, stool tests, and sometimes imaging tests like colonoscopy or sigmoidoscopy) to rule out other conditions with similar symptoms, such as inflammatory bowel disease (IBD), celiac disease, or infections.</li>
+        </ul>
+
+        <h2>Treatment and Management of IBS</h2>
+        <p>
+            There is no cure for IBS, so treatment focuses on managing symptoms and improving quality of life. Management strategies are often individualized and may involve a combination of:
+        </p>
+        <ul>
+            <li>**Dietary Modifications:**
+                <ul>
+                    <li>**FODMAP Diet:** A low-FODMAP diet (Fermentable Oligosaccharides, Disaccharides, Monosaccharides, and Polyols) involves restricting certain carbohydrates that can be poorly absorbed and fermented in the gut, leading to symptoms. This diet is usually implemented with the guidance of a registered dietitian.</li>
+                    <li>**Identifying Trigger Foods:** Keeping a food diary can help identify specific foods that worsen symptoms. Common triggers include fatty foods, spicy foods, caffeine, alcohol, carbonated drinks, and certain fruits and vegetables.</li>
+                    <li>**Increasing Fiber Intake:** For some individuals with IBS-C, increasing soluble fiber (found in oats, flaxseeds, and psyllium) can be helpful.</li>
+                    <li>**Gluten-Free or Dairy-Free Diets:** Some people find relief by avoiding gluten or dairy, even if they don't have celiac disease or lactose intolerance.</li>
+                    <li>**Eating Regular Meals:** Avoiding long gaps between meals can help regulate bowel function.</li>
+                    <li>**Drinking Plenty of Fluids:** Staying hydrated is important for overall gut health.</li>
+                </ul>
+            </li>
+            <li>**Medications:**
+                <ul>
+                    <li>**Antispasmodics:** To help relieve abdominal cramps and pain.</li>
+                    <li>**Laxatives:** For managing constipation (different types are available, and a doctor can recommend the most appropriate one).</li>
+                    <li>**Anti-diarrheal medications:** To help control diarrhea.</li>
+                    <li>**Certain Antidepressants:** Low doses of tricyclic antidepressants (TCAs) or selective serotonin reuptake inhibitors (SSRIs) can help manage pain and anxiety associated with IBS.</li>
+                    <li>**Gut-Specific Antibiotics:** Such as rifaximin, may be used to treat IBS-D and potentially SIBO.</li>
+                    <li>**Probiotics:** May help improve gut bacteria balance in some individuals.</li>
+                    <li>**Bile Acid Sequestrants:** Can help with diarrhea in some cases.</li>
+                    <li>**Serotonin Receptor Agonists and Antagonists:** Medications that target serotonin receptors in the gut may be used for IBS-C or IBS-D.</li>
+                </ul>
+            </li>
+            <li>**Stress Management Techniques:**
+                <ul>
+                    <li>Cognitive Behavioral Therapy (CBT)</li>
+                    <li>Hypnotherapy</li>
+                    <li>Mindfulness and meditation</li>
+                    <li>Relaxation techniques (e.g., deep breathing, yoga)</li>
+                    <li>Regular exercise</li>
+                </ul>
+            </li>
+            <li>**Probiotic Supplements:** Some people find that certain probiotic strains can help alleviate IBS symptoms, although the evidence is still evolving.</li>
+        </ul>
+        <p>
+            Managing IBS often requires a long-term, multi-faceted approach that involves working closely with a healthcare team, including doctors and registered dietitians. What works for one person may not work for another, so finding the right combination of strategies is key.
+        </p>
+    </div>
+
+    <div class="management-tips-box">
+        <h2>Tips for Managing IBS</h2>
+        <p>
+            Strategies to help control IBS symptoms.
+        </p>
+        <ul>
+            <li>Identify and avoid trigger foods</li>
+            <li>Consider a low-FODMAP diet</li>
+            <li>Manage stress through relaxation techniques</li>
+            <li>Consider probiotics</li>
+            <li>Stay hydrated</li>
+            <li>Eat regular meals</li>
+            <li>Discuss medications with your doctor</li>
+        </ul>
+    </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="section__container footer__container">
+            <div class="footer__col">
+                <h3>Health<span>Care</span></h3>
+                <p>
+                    We are honored to be a part of your healthcare journey and committed
+                    to delivering compassionate, personalized, and top-notch care every
+                    step of the way.
+                </p>
+                <p>
+                    Trust us with your health, and let us work together to achieve the
+                    best possible outcomes for you and your loved ones.
+                </p>
+            </div>
+            <div class="footer__col">
+                <h4> About Us</h4>
+                <p>Home</p>
+                <p>About Us</p>
+                <p>Work With Us</p>
+                <p>Our Blog</p>
+                <p>Terms & Conditions</p>
+            </div>
+            <div class="footer__col">
+                <h4>Services</h4>
+                <p>Search Terms</p>
+                <p>Advance Search</p>
+                <p>Privacy Policy</p>
+                <p>Suppliers</p>
+                <p>Our Stores</p>
+            </div>
+            <div class="footer__col">
+                <h4>Contact Us</h4>
+                <p>
+                    <i class="ri-map-pin-2-fill"></i> Vignan's Institute of Information Technology,Duvvada
+                </p>
+                <p><i class="ri-mail-fill"></i> support@care.com</p>
+                <p><i class="ri-phone-fill"></i> 0891-123-4567</p>
+            </div>
+        </div>
+        <div class="footer__bar">
+            <div class="footer__bar__content">
+                <p>Copyright © . All rights reserved.</p>
+                <div class="footer__socials">
+                    <span><i class="ri-instagram-line"></i></span>
+                    <span><i class="ri-facebook-fill"></i></span>
+                    <span><i class="ri-heart-fill"></i></span>
+                    <span><i class="ri-twitter-fill"></i></span>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

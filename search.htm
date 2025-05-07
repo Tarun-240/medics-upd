@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Disease Search</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css"
+      rel="stylesheet"
+    /><link rel="icon" type="image/png" href="/Medics/Photos/Medics.png">
+    
+    <link rel="icon" type="image/png" href="../Medics/Photos/Medics.png">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <style>
+
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.search-container {
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    margin-bottom: 20px;
+}
+
+.search-wrapper {
+    display: flex;
+    align-items: center;
+    background-color: #e7f6e6;
+    border-radius: 25px;
+    padding: 10px 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: relative;
+    left: 400px;
+}
+
+.search-container input {
+    flex: 1;
+    border: none;
+    background: none;
+    padding: 5px;
+    font-size: 1em;
+    color: #666;
+    outline: none;
+}
+
+.search-container input::placeholder {
+    color: #999;
+}
+
+.search-icon {
+    width: 24px;
+    height: 24px;
+    background-color: #4a90e2;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.search-icon::before {
+    content: '\1F50D';
+    font-size: 16px;
+    color: white;
+}
+
+.suggestions {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    max-height: 200px;
+    overflow-y: auto;
+    display: none;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: relative;
+    left: 400px;
+}
+
+.suggestions.active {
+    display: block;
+}
+
+.suggestion-item {
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 1em;
+    color: #333;
+    transition: background-color 0.3s ease;
+}
+
+.suggestion-item:hover {
+    background-color: #e7f6e6;
+}
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="section__container nav__container">
+            <div class="nav__logo">Med<span>ics</span></div>
+              <img src="/Medics/Photos/WhatsApp Image 2025-05-07 at 21.07.38.jpeg" id="pic">
+        <ul class="nav__links">
+                <li class="link"><a href="/Medics/index.html">Home</a></li>
+                <li class="link"><a href="/Medics/About Us.html">About Us</a></li>
+                <li class="link"><a href="/Medics/A-Z.html">Services</a></li>
+                <li class="link"><a href="/Medics/search.htm">Search</a></li>
+            </ul>
+            <button class="btn">Contact Us</button>
+            </nav>
+    </header>
+    <h2>Search for a Disease</h2>
+
+    <div class="search-container">
+        <div class="search-wrapper">
+            <input type="text" id="diseaseSearch" placeholder="Search..." oninput="filterSuggestions()" />
+            <span class="search-icon"></span>
+        </div>
+        <div class="suggestions" id="suggestions"></div>
+    </div>
+
+    <script>
+        // List of diseases with their page URLs (A-Z)
+        const diseases = {
+            // A diseases (from previous list)
+            "Abdominal Aortic Aneurysm": "A diseases/Abdominal Aortic Aneurysm.htm",
+            "Achilles Tendinopathy": "A diseases/Achilles Tendinopathy.htm",
+            "acne": "A diseases/acne.html",
+            "Acute Cholecystitis": "A diseases/Acute Cholecystitis.html",
+            "Acute Lymphoblastic Leukemia": "A diseases/Acute Lymphoblastic Leukemia.htm",
+            "Acute Pancreatitis": "A diseases/Acute Pancreatitis.htm",
+            "Addison's Disease": "A diseases/Addison's Disease.htm",
+            "Adenomyosis": "A diseases/Adenomyosis.html",
+            "Alcohol-Related Liver Disease": "A diseases/Alcohol-Related Liver Disease.htm",
+            "Allergies": "A diseases/Allergies.html",
+            "Alzheimer's Disease": "A diseases/Alzheimer's Disease.htm",
+            "Anal Cancer": "A diseases/Anal Cancer.htm",
+            "Anaphylaxis": "A diseases/Anaphylaxis.htm",
+            "Angina Pectoris": "A diseases/Angina Pectoris.htm",
+            "Ankle Sprain": "A diseases/Ankle Sprain.htm",
+            "Anorexia Nervosa": "A diseases/Anorexia Nervosa.htm",
+            "Anxiety Disorders in Children": "A diseases/Anxiety Disorders in Children.htm",
+            "Aplastic Anemia": "A diseases/Aplastic Anemia.htm",
+            "Appendicitis": "A diseases/Appendicitis.htm",
+            "Arthritis": "A diseases/Arthritis.htm",
+            "Asbestosis": "A diseases/Asbestosis.htm",
+            "asthma": "A diseases/asthma.htm",
+
+            // B diseases
+            "Back Problems": "B diseases/Back Problems Information.htm",
+            "Bacterial Vaginosis": "B diseases/Bacterial Vaginosis Information.htm",
+            "Bipolar Disorder": "B diseases/Bipolar Disorder.htm",
+            "Bladder Cancer": "B diseases/Bladder Cancer.htm",
+            "Bone Cancer Information": "B diseases/Bone Cancer Information.htm",
+            "Bowel Incontinence": "B diseases/Bowel Incontinence.htm",
+            "Brain Stem Death": "B diseases/Brain Stem Death.htm",
+            "Brain Tumors": "B diseases/Brain Tumors.htm",
+            "Breast Cancer": "B diseases/Breast Cancer.htm",
+            "Bronchitis": "B diseases/Bronchitis.htm",
+
+            // C diseases
+            "Carcinoid Syndrome and Carcinoid Tumors": "C diseases/Carcinoid Syndrome and Carcinoid Tumors.htm",
+            "Cardiovascular disease": "C diseases/Cardiovascular disease.htm",
+            "Carpal Tunnel Syndrome": "C diseases/Carpal Tunnel Syndrome.htm",
+            "Catarrh": "C diseases/Catarrh.htm",
+            "Cellulitis": "C diseases/Cellulitis.htm",
+            "Cervical Cancer": "C diseases/Cervical Cancer.htm",
+            "Chest and Rib Injuries": "C diseases/Chest and Rib Injuries.htm",
+            "Chest Infection": "C diseases/Chest Infection.html",
+            "Chickenpox": "C diseases/Chickenpox.htm",
+            "Chilblains": "C diseases/Chilblains.htm",
+            "Chronic Kidney Disease": "C diseases/Chronic Kidney Disease.htm",
+            "Chronic Myeloid Leukemia": "C diseases/Chronic Myeloid Leukemia.html",
+            "Chronic Pain": "C diseases/Chronic Pain.htm",
+            "Chronic Pancreatitis": "C diseases/Chronic Pancreatitis.htm",
+            "Cirrhosis": "C diseases/Cirrhosis.htm",
+            "Clavicle Fracture": "C diseases/Clavicle Fracture.htm",
+            "Cold Sore": "C diseases/Cold Sore.htm",
+            "Common Cold": "C diseases/Common Cold.html",
+            "Congenital Heart Disease": "C diseases/Congenital Heart Disease.htm",
+            "Coronary Heart Disease": "C diseases/Coronary Heart Disease.htm",
+            "COVID-19": "C diseases/Coronavirus Disease 2019 (COVID-19).htm",
+            "Cough": "C diseases/Cough.htm",
+            "Crohn's Disease": "C diseases/Crohn's Disease.htm",
+            "Croup": "C diseases/Croup.htm",
+            "Cystitis": "C diseases/Cystitis.htm",
+
+            // D diseases
+            "Deafblindness": "D diseases/Deafblindness.htm",
+            "Deep vein thrombosis": "D diseases/Deep Vein thrombosis.htm",
+            "Degenerative Cervical Myelopathy": "D diseases/Degenerative Cervical Myelopathy.htm",
+            "Dehydration": "D diseases/Dehydration.htm",
+            "Delirium": "D diseases/Delirium.htm",
+            "Dementia": "D diseases/Dementia.htm",
+            "Dental abscesses": "D diseases/Dental Abscesses.htm",
+            "Depression": "D diseases/Depression.htm",
+            "Dermatitis Herpetiformis": "D diseases/Dermatitis Herpetiformis.htm",
+            "Diabetic Retinopathy": "D diseases/Diabetic Retinopathy.htm",
+            "Diarrhoea": "D diseases/Diarrhoea.htm",
+            "Discoid Eczema": "D diseases/Discoid Eczema.htm",
+            "Diverticular Disease and Diverticulitis": "D diseases/Diverticular Disease and Diverticulitis.htm",
+            "Dizziness": "D diseases/Dizziness.htm",
+            "Down Syndrome": "D diseases/Down Syndrome.htm",
+            "Dry Mouth": "D diseases/Dry Mouth.htm",
+            "Dysphagia": "D diseases/Dysphagia.htm",
+            "Dystonia": "D diseases/Dystonia.htm",
+
+            // E diseases
+            "Erectile Dysfunction": "E diseases/Erectile Dysfunction.htm",
+            "Ewing Sarcoma": "E diseases/Ewing Sarcoma.htm",
+            "Eye Cancer": "E diseases/Eye Cancer.htm",
+
+            // F diseases
+            "Farting (Flatulence)": "F diseases/Farting (Flatulence).htm",
+            "Febrile Seizures": "F diseases/Febrile Seizures.htm",
+            "Fetal Alcohol Syndrome": "F diseases/Fetal Alcohol Syndrome.htm",
+            "Fever": "F diseases/Fever.htm",
+            "Food Allergy": "F diseases/Food Allergy.htm",
+            "Food Poisoning": "F diseases/Food Poisoning.htm",
+            "Fragility Fracture of the Hip": "F diseases/Fragility Fracture of the Hip.htm",
+            "Frozen Shoulder": "F diseases/Frozen Shoulder.htm",
+            "Functional Neurological Disorder": "F diseases/Functional Neurological Disorder.htm",
+            "Fungal Nail Infection": "F diseases/Fungal Nail Infection.htm",
+            "Influenza (Flu)": "F diseases/Influenza (Flu).htm",
+            
+
+            // G diseases
+            "Gallbladder Cancer": "G diseases/Gallbladder Cancer.htm",
+            "Gallstones": "G diseases/Gallstones.htm",
+            "Ganglion Cyst": "G diseases/Ganglion Cyst.htm",
+            "Genital Herpes": "G diseases/Genital Herpes.htm",
+            "Genital Symptoms Information": "G diseases/Genital Symptoms Information.htm",
+            "Genital Warts Information": "G diseases/Genital Warts Information.htm",
+            "Germ Cell Tumors Information": "G diseases/Germ Cell Tumors Information.htm",
+            "Glandular Fever Information": "G diseases/Glandular Fever Information.htm",
+            "Golfer's Elbow Information": "G diseases/Golfer's Elbow Information.htm",
+            "GORD (Gastro-oesophageal Reflux Disease)": "G diseases/GORD (Gastro-oesophageal Reflux Disease).htm",
+            "Gout Information": "G diseases/Gout Information.htm",
+            "Greater Trochanteric Pain Syndrome": "G diseases/Greater Trochanteric Pain Syndrome.htm",
+            "Gum Disease Information": "G diseases/Gum Disease Information.htm",
+
+            // H diseases
+            "Headaches": "H diseases/Headaches.htm",
+            "Heart Attack": "H diseases/Heart Attack.htm",
+            "Hepatitis A": "H diseases/Hepatitis A.htm",
+            "HIV": "H diseases/HIV.htm",
+
+            // I diseases
+            "Irritable Bowel Syndrome": "I diseases/Irritable Bowel Syndrome.htm",
+            "Itch Bottom": "I diseases/Itch Bottom.htm",
+            "Itchy Skin": "I diseases/Itchy Skin.htm",
+
+            // J diseases
+            "Joint Hypermobility": "J diseases/Joint Hypermobility.htm",
+
+            // K diseases
+            "Kidney Cancer": "K diseases/Kidney Cancer.htm",
+            "Kidney Infection": "K diseases/Kidney Infection.htm",
+            "Kidney Stones": "K diseases/Kidney Stones.htm",
+
+            // L diseases
+            "Laryngitis": "L diseases/Laryngitis.htm",
+            "Long-Term Effects of COVID-19": "L diseases/Long-Term Effects of COVID-19.htm",
+            "Low Blood Pressure": "L diseases/Low Blood Pressure.htm",
+            "Lung Cancer": "L diseases/Lung Cancer.htm",
+            "Lymphodema": "L diseases/Lymphodema.htm",
+
+            // M diseases
+            "Malnutrition": "M diseases/Malnutrition.htm",
+            "Migraine": "M diseases/Migraine.htm",
+            "Molar Pregnancy": "M diseases/Molar Pregnancy.htm",
+            "Mouth Ulcer": "M diseases/Mouth Ulcer.htm",
+            "Muscular Dystrophy": "M diseases/Muscular Dystrophy.htm",
+
+            // N diseases
+            "NAFLD": "N diseases/NAFLD.htm",
+            "Nasal and Sinus Cancer": "N diseases/Nasal and Sinus Cancer.htm",
+            "Neck Problems": "N diseases/Neck Problems.htm",
+            "Neuroblastoma": "N diseases/Neuroblastoma.htm",
+            "Non-Hodgkin Lymphoma": "N diseases/Non-Hodgkin Lymphoma.htm",
+            "Norovirus": "N diseases/Norovirus.htm",
+            "Nosebleed": "N diseases/Nosebleed.htm",
+
+            // O diseases
+            "Obesity": "O diseases/Obesity.htm",
+            "Oesophageal Cancer": "O diseases/Oesophageal Cancer.htm",
+            "Oral Thrush in Adults": "O diseases/Oral Thrush in Adults.htm",
+            "Ovarian Cancer": "O diseases/Ovarian Cancer.htm",
+            "Ovarian Cyst": "O diseases/Ovarian Cyst.htm",
+
+            // P diseases
+            "Paget's Disease of the Nipple": "P diseases/Paget's Disease of the Nipple.htm",
+            "Parkinson's Disease": "P diseases/Parkinson's Disease.htm",
+            "Panic Disorder": "P diseases/Panic Disorder.htm",
+            "Pain in the Ball of the Foot": "P diseases/Pain in the Ball of the Foot.htm",
+            "Phobias": "P diseases/Phobias.htm",
+            "Polio": "P diseases/Polio.htm",
+            "Psychosis": "P diseases/Psychosis.htm",
+            "Pubic Lice": "P diseases/Pubic Lice.htm",
+            "Pulmonary Hypertension": "P diseases/Pulmonary Hypertension.htm",
+
+            // R diseases
+            "Reactive Arthritis": "R diseases/Reactive Arthritis.htm",
+            "Recurrent Miscarriage": "R diseases/Recurrent Miscarriage.htm",
+            "Rhabdomyosarcoma": "R diseases/Rhabdomyosarcoma.htm",
+            "Rheumatoid Arthritis": "R diseases/Rheumatoid Arthritis.htm",
+            "Rosacea Information": "R diseases/Rosacea Information.htm",
+            "RSV": "R diseases/RSV.htm",
+
+            // S diseases
+            "Scabies": "S diseases/Scabies.htm",
+            "Scarlet Fever": "S diseases/Scarlet Fever.htm",
+            "Sepsis": "S diseases/Sepsis.htm",
+            "Shingles": "S diseases/Shingles.htm",
+            "Shortness of Breath": "S diseases/Shortness of Breath.htm",
+            "Sickle Cell Disease": "S diseases/Sickle Cell Disease.htm",
+            "Sinusitis": "S diseases/Sinusitis.htm",
+            "Skin Cancer": "S diseases/Skin Cancer.htm",
+            "Stroke": "S diseases/Stroke.htm",
+            "Sunburn": "S diseases/Sunburn.htm",
+
+            // T diseases
+            "Tennis Elbow": "T diseases/Tennis Elbow.htm",
+            "Testicular Cancer": "T diseases/Testicular Cancer.htm",
+            "Thirst": "T diseases/Thirst.htm",
+            "Thrush": "T diseases/Thrush.htm",
+            "Thyroid Cancer": "T diseases/Thyroid Cancer.htm",
+            "Tick Bites": "T diseases/Tick Bites.htm",
+            "Tinnitus": "T diseases/Tinnitus.htm",
+            "Transverse Myelitis": "T diseases/Transverse Myelitis.htm",
+            "Tuberculosis": "T diseases/Tuberculosis.htm",
+            "Type 1 Diabetes": "T diseases/Type 1 Diabetes.htm",
+
+            // U diseases
+            "Ulcerative Colitis": "U diseases/Ulcerative Colitis.htm",
+            "Underactive Thyroid": "U diseases/Underactive Thyroid.htm",
+            "Urine Incontinence": "U diseases/Urine Incontinence.htm",
+            "Urine Tract Infection": "U diseases/Urine Tract Infection.htm",
+            "Urticaria": "U diseases/Urticaria.htm",
+
+            // V diseases
+            "Vaginal Cancer": "V diseases/Vaginal Cancer.htm",
+            "Vaginal Discharge": "V diseases/Vaginal Discharge.htm",
+            "Varicose Veins": "V diseases/Varicose Veins.htm",
+            "Venous Leg Ulcer": "V diseases/Venous Leg Ulcer.htm",
+            "Vitamin B12": "V diseases/Vitamin B12.htm",
+            "Vomiting": "V diseases/Vomiting.htm",
+            "Vulval Cancer": "V diseases/Vulval Cancer.htm",
+
+            // W diseases
+            "Warts and Verrucas": "W diseases/Warts and Verrucas.htm",
+            "Wolff-Parkinson-White Syndrome": "W diseases/Wolff-Parkinson-White Syndrome.htm",
+            "Womb Cancer": "W diseases/Womb Cancer.htm",
+            "Wrist Fracture": "W diseases/Wrist Fracture.htm",
+
+            // Y diseases
+            "Yellow Fever": "Y diseases/Yellow Fever.htm",
+
+            // Z diseases
+            "Zika Virus": "Z diseases/Zika Virus.htm"
+        };
+
+        // Function to filter and display suggestions
+        function filterSuggestions() {
+            const input = document.getElementById("diseaseSearch").value.toLowerCase();
+            const suggestionsDiv = document.getElementById("suggestions");
+            suggestionsDiv.innerHTML = ""; // Clear previous suggestions
+
+            if (input) {
+                const filtered = Object.keys(diseases).filter(disease =>
+                    disease.toLowerCase().includes(input)
+                );
+
+                if (filtered.length > 0) {
+                    filtered.forEach(disease => {
+                        const div = document.createElement("div");
+                        div.className = "suggestion-item";
+                        div.textContent = disease;
+                        div.onclick = () => {
+                            window.location.href = diseases[disease];
+                        };
+                        suggestionsDiv.appendChild(div);
+                    });
+                    suggestionsDiv.classList.add("active");
+                } else {
+                    suggestionsDiv.classList.remove("active");
+                }
+            } else {
+                suggestionsDiv.classList.remove("active");
+            }
+        }
+
+        // Hide suggestions when clicking outside
+        document.addEventListener("click", (e) => {
+            const suggestionsDiv = document.getElementById("suggestions");
+            if (!e.target.closest(".search-container")) {
+                suggestionsDiv.classList.remove("active");
+            }
+        });
+    </script>
+    <footer class="footer">
+        <div class="section__container footer__container">
+            <div class="footer__col">
+                <h3>Health<span>Care</span></h3>
+                <p>
+                    We are honored to be a part of your healthcare journey and committed
+                    to delivering compassionate, personalized, and top-notch care every
+                    step of the way.
+                </p>
+                <p>
+                    Trust us with your health, and let us work together to achieve the
+                    best possible outcomes for you and your loved ones.
+                </p>
+            </div>
+            <div class="footer__col">
+                <h4> About Us</h4>
+                <p>Home</p>
+                <p>About Us</p>
+                <p>Work With Us</p>
+                <p>Our Blog</p>
+                <p>Terms & Conditions</p>
+            </div>
+            <div class="footer__col">
+                <h4>Services</h4>
+                <p>Search Terms</p>
+                <p>Advance Search</p>
+                <p>Privacy Policy</p>
+                <p>Suppliers</p>
+                <p>Our Stores</p>
+            </div>
+            <div class="footer__col">
+                <h4>Contact Us</h4>
+                <p>
+                    <i class="ri-map-pin-2-fill"></i> Vignan's Institute of Information Technology,Duvvada
+                </p>
+                <p><i class="ri-mail-fill"></i> support@care.com</p>
+                <p><i class="ri-phone-fill"></i> 0891-123-4567</p>
+            </div>
+        </div>
+        <div class="footer__bar">
+            <div class="footer__bar__content">
+                <p>Copyright © . All rights reserved.</p>
+                <div class="footer__socials">
+                    <span><i class="ri-instagram-line"></i></span>
+                    <span><i class="ri-facebook-fill"></i></span>
+                    <span><i class="ri-heart-fill"></i></span>
+                    <span><i class="ri-twitter-fill"></i></span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

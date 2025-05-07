@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="icon" type="image/png" href="/Medics/Photos/Medics.png">
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css"
+      rel="stylesheet"
+    /><link rel="icon" type="image/png" href="/Medics/Photos/Medics.png">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/Medics/styles.css" />
+    <title>Itchy Skin</title>
+    <style>
+        
+        body {
+            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            background-color: #f4f9f9;
+            margin: 0;
+            padding: 0; /* Remove default body padding */
+            color: #333;
+            display: flex;
+            flex-direction: column; /* Stack header, main content, and footer */
+            min-height: 100vh; /* Ensure the body takes at least the full viewport height */
+        }
+
+    
+
+        .nav__container {
+            max-width: var(--max-width);
+            margin: 0 auto; /* Center the navbar */
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .nav__logo {
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: var(--white);
+        }
+
+        .nav__logo span {
+            color: var(--secondary-color);
+        }
+
+        .nav__links {
+            list-style: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 2rem;
+        }
+
+        .link a {
+            padding: 0.5rem;
+            color: var(--primary-color-light);
+        }
+
+        .link a:hover {
+            color: var(--white);
+        }
+
+        .btn {
+            padding: 0.75rem 2rem;
+            outline: none;
+            border: none;
+            font-size: 1rem;
+            white-space: nowrap;
+            color: var(--white);
+            background-color: var(--secondary-color);
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .main-content {
+            display: flex;
+            max-width: 1200px;
+            margin: 30px auto; /* Center the main content with top/bottom margin */
+            padding: 0 30px; /* Add horizontal padding for the main content */
+            gap: 80px;
+            flex-grow: 1; /* Allow main content to grow and push footer down */
+        }
+
+        .container {
+            max-width: 700px;
+            background-color: white;
+            padding: 30px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        h1 {
+            color: #00695c;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        h2 {
+            color: #46BCA6;
+            margin-top: 30px;
+            margin-bottom: 10px;
+        }
+
+        p {
+            margin-bottom: 15px;
+        }
+
+        ul {
+            margin-left: 20px;
+        }
+  
+
+        .treatment-box {
+            background-color: #e8f5e9; /* Light green background */
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+            width: 300px; /* Fixed width for the box */
+            position: sticky; /* Keep it visible while scrolling */
+            top: 20px; /* Adjust as needed */
+            align-self: flex-start; /* Align to the top of the container */
+        }
+
+        .treatment-box h2 {
+            color: #388e3c; /* Darker green for heading */
+            margin-top: 0;
+        }
+
+
+        @media (max-width: 768px) {
+            .main-content {
+                flex-direction: column; /* Stack main content and treatment box */
+                padding: 0 20px;
+                gap: 30px;
+            }
+
+            .treatment-box {
+                width: 100%; /* Make the box full width */
+                position: static; /* No sticky positioning */
+                margin-top: 20px; /* Add some top margin */
+            }
+
+            .container {
+                max-width: 100%; /* Make container full width on smaller screens */
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="section__container nav__container">
+            <div class="nav__logo">Med<span>ics</span></div>
+              <img src="/Medics/Photos/WhatsApp Image 2025-05-07 at 21.07.38.jpeg" id="pic">
+        <ul class="nav__links">
+              <li class="link"><a href="/Medics/index.html">Home</a></li>
+                <li class="link"><a href="/Medics/About Us.html">About Us</a></li>
+                <li class="link"><a href="/Medics/A-Z.html">Services</a></li>
+                <li class="link"><a href="/Medics/search.htm">Search</a></li>
+            </ul>
+            <button class="btn">Contact Us</button>
+            </nav>
+    </header>
+    <div class="main-content">
+        <div class="container">
+         <h1>Itchy Skin (Pruritus)</h1>
+
+        <h2>Understanding Itchy Skin</h2>
+        <p>
+            Itchy skin, medically known as pruritus, is a common and often bothersome sensation that triggers the urge to scratch. It can affect a small area or the entire body and can range from mild to severe. While sometimes it's a temporary annoyance, persistent or severe itching can be a sign of an underlying medical condition.
+        </p>
+
+        <h2>Common Causes of Itchy Skin</h2>
+        <p>
+            The causes of itchy skin are varied and can include:
+        </p>
+        <ul>
+            <li>**Skin Conditions:**
+                <ul>
+                    <li>Dry skin (xerosis)</li>
+                    <li>Eczema (atopic dermatitis)</li>
+                    <li>Psoriasis</li>
+                    <li>Hives (urticaria)</li>
+                    <li>Contact dermatitis (reaction to irritants or allergens)</li>
+                    <li>Scabies</li>
+                    <li>Chickenpox or shingles</li>
+                    <li>Fungal infections (e.g., ringworm, athlete's foot)</li>
+                </ul>
+            </li>
+            <li>**Internal Diseases:**
+                <ul>
+                    <li>Liver disease (e.g., cholestasis)</li>
+                    <li>Kidney disease (uremic pruritus)</li>
+                    <li>Iron deficiency anemia</li>
+                    <li>Thyroid problems</li>
+                    <li>Diabetes</li>
+                    <li>Certain cancers (e.g., lymphoma, leukemia)</li>
+                </ul>
+            </li>
+            <li>**Allergic Reactions:**
+                <ul>
+                    <li>Food allergies</li>
+                    <li>Drug allergies</li>
+                    <li>Insect bites or stings</li>
+                    <li>Allergic contact dermatitis (e.g., to nickel, fragrances)</li>
+                </ul>
+            </li>
+            <li>**Irritants:**
+                <ul>
+                    <li>Soaps, detergents, and cleaning products</li>
+                    <li>Wool or synthetic fabrics</li>
+                </ul>
+            </li>
+            <li>**Nerve Problems:**
+                <ul>
+                    <li>Multiple sclerosis</li>
+                    <li>Shingles (postherpetic neuralgia)</li>
+                    <li>Pinched nerves</li>
+                </ul>
+            </li>
+            <li>**Psychological Factors:**
+                <ul>
+                    <li>Anxiety</li>
+                    <li>Depression</li>
+                </ul>
+            </li>
+            <li>**Pregnancy:** Hormonal changes can cause itching (pruritus gravidarum).</li>
+            <li>**Medications:** Some medications can have itching as a side effect.</li>
+        </ul>
+
+        <h2>When to Seek Medical Advice for Itchy Skin</h2>
+        <p>
+            Consult a doctor if your itchy skin:
+        </p>
+        <ul>
+            <li>Is severe or doesn't improve with home care.</li>
+            <li>Is widespread.</li>
+            <li>Is accompanied by other concerning symptoms such as:
+                <ul>
+                    <li>Jaundice (yellowing of the skin or eyes)</li>
+                    <li>Severe fatigue</li>
+                    <li>Unexplained weight loss</li>
+                    <li>Fever</li>
+                    <li>Changes in bowel or bladder habits</li>
+                    <li>Skin rash, blisters, or sores</li>
+                </ul>
+            </li>
+            <li>Starts suddenly and you suspect an allergic reaction.</li>
+            <li>Interferes with your sleep or daily activities.</li>
+        </ul>
+
+        <h2>Diagnosis of Itchy Skin</h2>
+        <p>
+            To determine the cause of your itchy skin, your doctor may:
+        </p>
+        <ul>
+            <li>**Take a detailed medical history:** Asking about your symptoms, when they started, where the itching occurs, your past medical conditions, medications, and any known allergies.</li>
+            <li>**Perform a physical examination:** Carefully examining your skin for any visible signs like rashes, dryness, or irritation.</li>
+            <li>**Order blood tests:** To check for underlying medical conditions such as liver or kidney problems, thyroid issues, anemia, or signs of infection.</li>
+            <li>**Perform skin tests or biopsies:** If a skin condition or allergy is suspected, skin tests (like patch testing) or a skin biopsy (taking a small skin sample for examination) may be necessary.</li>
+        </ul>
+
+        <h2>Self-Care and Soothing Tips for Itchy Skin</h2>
+        <p>
+            You can often find relief from itchy skin with these self-care measures:
+        </p>
+        <ul>
+            <li>**Avoid Scratching:** This is crucial to prevent further irritation, skin damage, and infection. Try patting or tapping the itchy area instead.</li>
+            <li>**Apply Cool Compresses or Ice Packs:** Cooling the skin can help numb the area and reduce itching.</li>
+            <li>**Take Cool or Lukewarm Baths or Showers:** Hot water can dry out the skin and worsen itching. Consider adding colloidal oatmeal or baking soda to the bath for soothing relief.</li>
+            <li>**Moisturize Regularly:** Use fragrance-free and hypoallergenic moisturizers several times a day, especially after bathing, to keep your skin hydrated.</li>
+            <li>**Wear Loose, Cotton Clothing:** Avoid synthetic fabrics and wool, which can irritate the skin.</li>
+            <li>**Avoid Known Irritants and Allergens:** Identify and avoid substances that you know cause your skin to itch.</li>
+            <li>**Use Over-the-Counter Antihistamines:** Oral antihistamines like loratadine, cetirizine, or fexofenadine can help relieve itching caused by allergic reactions. Sedating antihistamines like diphenhydramine may be helpful at night but can cause drowsiness.</li>
+            <li>**Apply Topical Corticosteroid Creams:** Over-the-counter hydrocortisone cream can help reduce inflammation and itching from mild skin conditions. Use as directed.</li>
+            <li>**Keep Your Fingernails Short and Smooth:** This can minimize skin damage if you scratch unintentionally.</li>
+            <li>**Try Distraction Techniques:** Engaging in activities that take your mind off the itching can be helpful.</li>
+        </ul>
+
+        <h2>Medical Treatments for Itchy Skin</h2>
+        <p>
+            If home care isn't enough, your doctor may prescribe treatments based on the cause of your itching:
+        </p>
+        <ul>
+            <li>**Prescription Topical Corticosteroids:** Stronger creams or ointments for inflammatory skin conditions.</li>
+            <li>**Calcineurin Inhibitors (Topical):** Such as tacrolimus and pimecrolimus, often used for eczema.</li>
+            <li>**Prescription Oral Antihistamines:** Stronger antihistamines for severe allergic reactions or chronic itching.</li>
+            <li>**Phototherapy (Light Therapy):** Can be effective for certain skin conditions like psoriasis or eczema that cause itching.</li>
+            <li>**Medications for Underlying Conditions:** Treating the underlying medical condition that is causing the itching.</li>
+            <li>**Antidepressants:** Some antidepressants can help with chronic itching, especially if nerve-related or linked to anxiety or depression.</li>
+            <li>**Gabapentin or Pregabalin:** Medications that can help with nerve pain and itching.</li>
+            <li>**Corticosteroid Injections or Oral Medications:** For severe inflammatory skin conditions.</li>
+        </ul>
+        <p>
+            Working closely with your doctor is important to identify the cause of your itchy skin and develop an effective treatment plan.
+        </p>
+    </div>
+
+    <div class="soothing-tips-box">
+        <h2>Simple Ways to Soothe Itchy Skin</h2>
+        <p>
+            Quick tips for relief.
+        </p>
+        <ul>
+            <li>Apply cool compresses</li>
+            <li>Take lukewarm baths</li>
+            <li>Moisturize frequently</li>
+            <li>Wear soft, breathable fabrics</li>
+            <li>Avoid known irritants</li>
+            <li>Consider OTC antihistamines</li>
+        </ul>
+    </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="section__container footer__container">
+            <div class="footer__col">
+                <h3>Health<span>Care</span></h3>
+                <p>
+                    We are honored to be a part of your healthcare journey and committed
+                    to delivering compassionate, personalized, and top-notch care every
+                    step of the way.
+                </p>
+                <p>
+                    Trust us with your health, and let us work together to achieve the
+                    best possible outcomes for you and your loved ones.
+                </p>
+            </div>
+            <div class="footer__col">
+                <h4> About Us</h4>
+                <p>Home</p>
+                <p>About Us</p>
+                <p>Work With Us</p>
+                <p>Our Blog</p>
+                <p>Terms & Conditions</p>
+            </div>
+            <div class="footer__col">
+                <h4>Services</h4>
+                <p>Search Terms</p>
+                <p>Advance Search</p>
+                <p>Privacy Policy</p>
+                <p>Suppliers</p>
+                <p>Our Stores</p>
+            </div>
+            <div class="footer__col">
+                <h4>Contact Us</h4>
+                <p>
+                    <i class="ri-map-pin-2-fill"></i> Vignan's Institute of Information Technology,Duvvada
+                </p>
+                <p><i class="ri-mail-fill"></i> support@care.com</p>
+                <p><i class="ri-phone-fill"></i> 0891-123-4567</p>
+            </div>
+        </div>
+        <div class="footer__bar">
+            <div class="footer__bar__content">
+                <p>Copyright © . All rights reserved.</p>
+                <div class="footer__socials">
+                    <span><i class="ri-instagram-line"></i></span>
+                    <span><i class="ri-facebook-fill"></i></span>
+                    <span><i class="ri-heart-fill"></i></span>
+                    <span><i class="ri-twitter-fill"></i></span>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

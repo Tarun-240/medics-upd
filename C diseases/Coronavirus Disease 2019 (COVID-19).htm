@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="icon" type="image/png" href="/Medics/Photos/Medics.png">
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css"
+      rel="stylesheet"
+    /><link rel="icon" type="image/png" href="/Medics/Photos/Medics.png">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/Medics/styles.css" />
+    <title>COVID-19</title>
+    <style>
+        
+        body {
+            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            background-color: #f4f9f9;
+            margin: 0;
+            padding: 0; /* Remove default body padding */
+            color: #333;
+            display: flex;
+            flex-direction: column; /* Stack header, main content, and footer */
+            min-height: 100vh; /* Ensure the body takes at least the full viewport height */
+        }
+
+    
+
+        .nav__container {
+            max-width: var(--max-width);
+            margin: 0 auto; /* Center the navbar */
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .nav__logo {
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: var(--white);
+        }
+
+        .nav__logo span {
+            color: var(--secondary-color);
+        }
+
+        .nav__links {
+            list-style: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 2rem;
+        }
+
+        .link a {
+            padding: 0.5rem;
+            color: var(--primary-color-light);
+        }
+
+        .link a:hover {
+            color: var(--white);
+        }
+
+        .btn {
+            padding: 0.75rem 2rem;
+            outline: none;
+            border: none;
+            font-size: 1rem;
+            white-space: nowrap;
+            color: var(--white);
+            background-color: var(--secondary-color);
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .main-content {
+            display: flex;
+            max-width: 1200px;
+            margin: 30px auto; /* Center the main content with top/bottom margin */
+            padding: 0 30px; /* Add horizontal padding for the main content */
+            gap: 80px;
+            flex-grow: 1; /* Allow main content to grow and push footer down */
+        }
+
+        .container {
+            max-width: 700px;
+            background-color: white;
+            padding: 30px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        h1 {
+            color: #00695c;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        h2 {
+            color: #46BCA6;
+            margin-top: 30px;
+            margin-bottom: 10px;
+        }
+
+        p {
+            margin-bottom: 15px;
+        }
+
+        ul {
+            margin-left: 20px;
+        }
+
+        .treatment-box {
+            background-color: #e8f5e9; /* Light green background */
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+            width: 300px; /* Fixed width for the box */
+            position: sticky; /* Keep it visible while scrolling */
+            top: 20px; /* Adjust as needed */
+            align-self: flex-start; /* Align to the top of the container */
+        }
+
+        .treatment-box h2 {
+            color: #388e3c; /* Darker green for heading */
+            margin-top: 0;
+        }
+
+
+        @media (max-width: 768px) {
+            .main-content {
+                flex-direction: column; /* Stack main content and treatment box */
+                padding: 0 20px;
+                gap: 30px;
+            }
+
+            .treatment-box {
+                width: 100%; /* Make the box full width */
+                position: static; /* No sticky positioning */
+                margin-top: 20px; /* Add some top margin */
+            }
+
+            .container {
+                max-width: 100%; /* Make container full width on smaller screens */
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="section__container nav__container">
+            <div class="nav__logo">Med<span>ics</span></div>
+              <img src="/Medics/Photos/WhatsApp Image 2025-05-07 at 21.07.38.jpeg" id="pic">
+        <ul class="nav__links">
+          <li class="link"><a href="/Medics/index.html">Home</a></li>
+          <li class="link"><a href="/Medics/About Us.html">About Us</a></li>
+          <li class="link"><a href="/Medics/A-Z.html">Services</a></li>
+          <li class="link"><a href="/Medics/search.htm">Search</a></li>
+</ul>
+            <button class="btn">Contact Us</button>
+            </nav>
+    </header>
+    <div class="main-content">
+        <div class="container">
+		 <h1>Coronavirus Disease 2019 (COVID-19)</h1>
+
+        <h2>About COVID-19</h2>
+        <p>
+            Coronavirus disease 2019 (COVID-19) is an infectious disease caused by the SARS-CoV-2 virus. The virus was first identified in late 2019 in Wuhan, China, and quickly spread globally, leading to a pandemic.
+        </p>
+        <p>
+            COVID-19 primarily affects the respiratory system, but it can also affect other organs. The severity of the illness can vary widely, from mild or no symptoms to severe illness and death.
+        </p>
+
+        <h2>Symptoms of COVID-19</h2>
+        <p>
+            The most common symptoms of COVID-19 include:
+        </p>
+        <ul>
+            <li>Fever</li>
+            <li>Cough</li>
+            <li>Fatigue</li>
+            <li>Shortness of breath or difficulty breathing</li>
+            <li>Loss of taste or smell</li>
+        </ul>
+        <p>
+            Other possible symptoms include:
+        </p>
+        <ul>
+            <li>Sore throat</li>
+            <li>Headache</li>
+            <li>Muscle aches or body aches</li>
+            <li>Nausea or vomiting</li>
+            <li>Diarrhea</li>
+            <li>Runny nose or congestion</li>
+        </ul>
+        <p>
+            Symptoms typically appear 2 to 14 days after exposure to the virus. Some people may be infected but not develop any symptoms (asymptomatic).
+        </p>
+
+        <h2>Transmission of COVID-19</h2>
+        <p>
+            The virus that causes COVID-19 spreads primarily through:
+        </p>
+        <ul>
+            <li>Respiratory droplets: When an infected person coughs, sneezes, or talks, they release tiny droplets containing the virus. These droplets can be inhaled by people who are nearby.</li>
+            <li>Close contact: Touching or being close to an infected person.</li>
+            <li>Aerosols: Smaller particles can remain suspended in the air for longer periods and travel farther, especially in poorly ventilated spaces.</li>
+            <li>Contaminated surfaces: Touching a surface with the virus on it and then touching your mouth, nose, or eyes, though this is less common.</li>
+        </ul>
+
+        <h2>Risk Factors for Severe COVID-19</h2>
+        <p>
+            Certain factors can increase the risk of developing severe COVID-19:
+        </p>
+        <ul>
+            <li>Older age: People over the age of 65 are at higher risk.</li>
+            <li>Underlying medical conditions: Such as:
+                <ul>
+                    <li>Heart disease</li>
+                    <li>Lung disease</li>
+                    <li>Diabetes</li>
+                    <li>Obesity</li>
+                    <li>Cancer</li>
+                    <li>Chronic kidney disease</li>
+                    <li>Weakened immune system</li>
+                </ul>
+            </li>
+        </ul>
+
+        <h2>Diagnosing COVID-19</h2>
+        <p>
+            COVID-19 is diagnosed through laboratory tests:
+        </p>
+        <ul>
+            <li>RT-PCR (reverse transcription-polymerase chain reaction) test: This is the most common and accurate test, which detects the virus's genetic material.</li>
+            <li>Antigen test: A rapid test that detects specific viral proteins. Antigen tests are less accurate than PCR tests but provide faster results.</li>
+        </ul>
+
+        <h2>Treating COVID-19</h2>
+        <p>
+            Treatment for COVID-19 depends on the severity of the illness.
+        </p>
+        <p>
+            For mild cases, treatment may include:
+        </p>
+        <ul>
+            <li>Rest</li>
+            <li>Fluids</li>
+            <li>Pain relievers: To manage fever and aches.</li>
+        </ul>
+        <p>
+            For more severe cases, treatment may include:
+        </p>
+        <ul>
+            <li>Oxygen therapy: To help with breathing.</li>
+            <li>Medications:
+                <ul>
+                    <li>Antiviral medications: Such as remdesivir.</li>
+                    <li>Corticosteroids: Such as dexamethasone, to reduce inflammation.</li>
+                </ul>
+            </li>
+            <li>Mechanical ventilation: In the most severe cases, a ventilator may be needed to help the patient breathe.</li>
+        </ul>
+
+        <h2>Preventing COVID-19</h2>
+        <p>
+            Preventive measures to help reduce the spread of COVID-19 include:
+        </p>
+        <ul>
+            <li>Vaccination: Vaccines are highly effective in preventing severe illness, hospitalization, and death from COVID-19.</li>
+            <li>Wearing masks: Masks that cover your nose and mouth can help prevent the spread of respiratory droplets.</li>
+            <li>Social distancing: Staying at least 6 feet (2 meters) away from others.</li>
+            <li>Hand hygiene: Washing your hands frequently with soap and water for at least 20 seconds, or using hand sanitizer with at least 60% alcohol.</li>
+            <li>Avoiding crowds and poorly ventilated spaces</li>
+            <li>Getting tested: If you have symptoms or have been exposed to someone with COVID-19.</li>
+        </ul>
+    </div>
+
+    <div class="treatment-box">
+        <h2>Preventing COVID-19</h2>
+        <p>
+            Key preventive measures:
+        </p>
+        <ul>
+            <li>Vaccination</li>
+            <li>Wearing masks</li>
+            <li>Social distancing</li>
+            <li>Hand hygiene</li>
+            <li>Avoiding crowds/poorly ventilated spaces</li>
+            <li>Getting tested</li>
+        </ul>
+    </div>						
+                    </div>
+    </div>
+    <footer class="footer">
+        <div class="section__container footer__container">
+            <div class="footer__col">
+                <h3>Health<span>Care</span></h3>
+                <p>
+                    We are honored to be a part of your healthcare journey and committed
+                    to delivering compassionate, personalized, and top-notch care every
+                    step of the way.
+                </p>
+                <p>
+                    Trust us with your health, and let us work together to achieve the
+                    best possible outcomes for you and your loved ones.
+                </p>
+            </div>
+            <div class="footer__col">
+                <h4> About Us</h4>
+                <p>Home</p>
+                <p>About Us</p>
+                <p>Work With Us</p>
+                <p>Our Blog</p>
+                <p>Terms & Conditions</p>
+            </div>
+            <div class="footer__col">
+                <h4>Services</h4>
+                <p>Search Terms</p>
+                <p>Advance Search</p>
+                <p>Privacy Policy</p>
+                <p>Suppliers</p>
+                <p>Our Stores</p>
+            </div>
+            <div class="footer__col">
+                <h4>Contact Us</h4>
+                <p>
+                    <i class="ri-map-pin-2-fill"></i> Vignan's Institute of Information Technology,Duvvada
+                </p>
+                <p><i class="ri-mail-fill"></i> support@care.com</p>
+                <p><i class="ri-phone-fill"></i> 0891-123-4567</p>
+            </div>
+        </div>
+        <div class="footer__bar">
+            <div class="footer__bar__content">
+                <p>Copyright © . All rights reserved.</p>
+                <div class="footer__socials">
+                    <span><i class="ri-instagram-line"></i></span>
+                    <span><i class="ri-facebook-fill"></i></span>
+                    <span><i class="ri-heart-fill"></i></span>
+                    <span><i class="ri-twitter-fill"></i></span>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

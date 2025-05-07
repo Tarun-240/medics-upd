@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="icon" type="image/png" href="/Medics/Photos/Medics.png">
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css"
+      rel="stylesheet"
+    /><link rel="icon" type="image/png" href="/Medics/Photos/Medics.png">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/Medics/styles.css" />
+    <title>Sickle Cell Disease</title>
+    <style>
+        
+        body {
+            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            background-color: #f4f9f9;
+            margin: 0;
+            padding: 0; /* Remove default body padding */
+            color: #333;
+            display: flex;
+            flex-direction: column; /* Stack header, main content, and footer */
+            min-height: 100vh; /* Ensure the body takes at least the full viewport height */
+        }
+
+    
+
+        .nav__container {
+            max-width: var(--max-width);
+            margin: 0 auto; /* Center the navbar */
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .nav__logo {
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: var(--white);
+        }
+
+        .nav__logo span {
+            color: var(--secondary-color);
+        }
+
+        .nav__links {
+            list-style: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 2rem;
+        }
+
+        .link a {
+            padding: 0.5rem;
+            color: var(--primary-color-light);
+        }
+
+        .link a:hover {
+            color: var(--white);
+        }
+
+        .btn {
+            padding: 0.75rem 2rem;
+            outline: none;
+            border: none;
+            font-size: 1rem;
+            white-space: nowrap;
+            color: var(--white);
+            background-color: var(--secondary-color);
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .main-content {
+            display: flex;
+            max-width: 1200px;
+            margin: 30px auto; /* Center the main content with top/bottom margin */
+            padding: 0 30px; /* Add horizontal padding for the main content */
+            gap: 80px;
+            flex-grow: 1; /* Allow main content to grow and push footer down */
+        }
+
+        .container {
+            max-width: 700px;
+            background-color: white;
+            padding: 30px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        h1 {
+            color: #00695c;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        h2 {
+            color: #46BCA6;
+            margin-top: 30px;
+            margin-bottom: 10px;
+        }
+
+        p {
+            margin-bottom: 15px;
+        }
+
+        ul {
+            margin-left: 20px;
+        }
+  
+
+        .treatment-box {
+            background-color: #e8f5e9; /* Light green background */
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+            width: 300px; /* Fixed width for the box */
+            position: sticky; /* Keep it visible while scrolling */
+            top: 20px; /* Adjust as needed */
+            align-self: flex-start; /* Align to the top of the container */
+        }
+
+        .treatment-box h2 {
+            color: #388e3c; /* Darker green for heading */
+            margin-top: 0;
+        }
+
+
+        @media (max-width: 768px) {
+            .main-content {
+                flex-direction: column; /* Stack main content and treatment box */
+                padding: 0 20px;
+                gap: 30px;
+            }
+
+            .treatment-box {
+                width: 100%; /* Make the box full width */
+                position: static; /* No sticky positioning */
+                margin-top: 20px; /* Add some top margin */
+            }
+
+            .container {
+                max-width: 100%; /* Make container full width on smaller screens */
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="section__container nav__container">
+            <div class="nav__logo">Med<span>ics</span></div>
+              <img src="/Medics/Photos/WhatsApp Image 2025-05-07 at 21.07.38.jpeg" id="pic">
+        <ul class="nav__links">
+              <li class="link"><a href="/Medics/index.html">Home</a></li>
+                <li class="link"><a href="/Medics/About Us.html">About Us</a></li>
+                <li class="link"><a href="/Medics/A-Z.html">Services</a></li>
+                <li class="link"><a href="/Medics/search.htm">Search</a></li>
+            </ul>
+            <button class="btn">Contact Us</button>
+            </nav>
+    </header>
+    <div class="main-content">
+        <div class="container">
+ <h1>Sickle Cell Disease (SCD)</h1>
+
+        <h2>Understanding Sickle Cell Disease</h2>
+        <p>
+            Sickle cell disease (SCD) is a group of inherited red blood cell disorders. The most common type is sickle cell anemia. In SCD, the red blood cells become hard and sticky and look like a C-shaped farm tool called a "sickle." Normally, red blood cells are round and flexible, allowing them to move easily through blood vessels. The sickle-shaped cells can get stuck in small blood vessels, which can slow or block blood flow and oxygen to parts of the body.
+        </p>
+        <p>
+            SCD is a lifelong disease. The severity varies greatly from person to person. It is most common in people of African descent, but also affects people of Hispanic, South Asian, Middle Eastern, and Mediterranean ancestry.
+        </p>
+
+        <h2>Genetic Basis of Sickle Cell Disease</h2>
+        <p>
+            SCD is caused by a mutation in the gene that tells the body how to make hemoglobin, the protein in red blood cells that carries oxygen. People with SCD inherit two copies of the sickle cell gene, one from each parent.
+        </p>
+        <ul>
+            <li>**Sickle Cell Trait:** People who inherit only one copy of the sickle cell gene and one normal hemoglobin gene have sickle cell trait. They usually don't have any symptoms and live a normal life, but they can pass the sickle cell gene on to their children.</li>
+            <li>**Sickle Cell Disease:** People who inherit two copies of the sickle cell gene have SCD. The most common forms include:
+                <ul>
+                    <li>**Hemoglobin SS (HbSS):** The most common and often most severe form, where a person inherits two copies of the HbS gene.</li>
+                    <li>**Hemoglobin SC (HbSC):** Occurs when a person inherits one HbS gene and one gene for another abnormal type of hemoglobin called hemoglobin C. Symptoms are generally milder than HbSS.</li>
+                    <li>**Hemoglobin S beta-thalassemia:** Occurs when a person inherits one HbS gene and one gene for beta-thalassemia, another blood disorder. The severity depends on how much normal beta-globin is produced.</li>
+                </ul>
+            </li>
+        </ul>
+
+        <h2>Common Symptoms</h2>
+        <p>
+            Symptoms of SCD vary but are related to the sickle-shaped red blood cells blocking blood flow and the reduced oxygen-carrying capacity. Common symptoms include:
+        </p>
+        <ul>
+            <li>**Pain crises:** Episodes of sudden, severe pain that can occur anywhere in the body, often in the bones, chest, abdomen, and joints. Pain crises can last from hours to days or even weeks.</li>
+            <li>**Anemia:** Sickle cells don't live as long as normal red blood cells, leading to a chronic shortage of red blood cells (anemia). This can cause fatigue, weakness, and shortness of breath.</li>
+            <li>**Jaundice:** The breakdown of sickle cells can cause a yellowing of the skin and whites of the eyes (jaundice).</li>
+            <li>**Swelling of the hands and feet:** Caused by blocked blood circulation.</li>
+            <li>**Frequent infections:** Sickle cell disease can damage the spleen, which helps fight infection, making individuals more prone to bacterial infections.</li>
+            <li>**Delayed growth and puberty:** Children with SCD may grow and mature more slowly.</li>
+            <li>**Vision problems:** Blocked blood vessels in the eyes can damage the retina.</li>
+            <li>**Stroke:** Sickle cells can block blood flow to the brain, leading to stroke.</li>
+            <li>**Acute chest syndrome (ACS):** A serious complication involving chest pain, fever, cough, and difficulty breathing, often caused by infection or blocked blood flow in the lungs.</li>
+            <li>**Splenic sequestration:** A sudden trapping of blood in the spleen, which can be life-threatening, especially in young children.</li>
+            <li>**Pulmonary hypertension:** High blood pressure in the arteries of the lungs.</li>
+            <li>**Avascular necrosis (osteonecrosis):** Death of bone tissue due to lack of blood supply, commonly affecting the hips and shoulders.</li>
+            <li>**Leg ulcers:** Open sores on the lower legs, often occurring in adolescence and adulthood.</li>
+        </ul>
+
+        <h2>Diagnosis</h2>
+        <p>
+            Sickle cell disease is usually diagnosed during infancy or early childhood through newborn screening programs. Diagnostic tests include:
+        </p>
+        <ul>
+            <li>**Hemoglobin electrophoresis or high-performance liquid chromatography (HPLC):** Blood tests that identify the types and amounts of hemoglobin in the red blood cells, including the abnormal sickle hemoglobin (HbS).</li>
+            <li>**Sickle solubility test (Sickledex):** A quick screening test that checks for the presence of HbS. A positive result is usually followed by hemoglobin electrophoresis or HPLC to confirm the diagnosis and identify the specific type of SCD.</li>
+            <li>**Genetic testing:** Can confirm the presence of sickle cell genes and is used for prenatal diagnosis.</li>
+        </ul>
+        <p>
+            Prenatal testing, such as amniocentesis or chorionic villus sampling (CVS), can be done to diagnose SCD in a fetus if both parents are known carriers of the sickle cell gene.
+        </p>
+
+        <h2>Treatment and Management</h2>
+        <p>
+            There is no widely available cure for most forms of sickle cell disease, although gene therapies and stem cell transplantation are showing promise for some individuals. Treatment focuses on managing symptoms, preventing complications, and improving quality of life. Management strategies include:
+        </p>
+        <ul>
+            <li>**Pain management:** Using pain medications (from over-the-counter to strong prescription opioids), hydration, and sometimes blood transfusions to manage pain crises.</li>
+            <li>**Hydroxyurea:** A medication that can reduce the frequency and severity of pain crises, acute chest syndrome, and the need for blood transfusions in some people with SCD.</li>
+            <li>**L-glutamine:** An oral medication that can help reduce the frequency of pain crises in adults and children with SCD.</li>
+            <li>**Crizanlizumab:** An intravenous medication that can help prevent blood cells from sticking to blood vessel walls, reducing the frequency of pain crises.</li>
+            <li>**Voxelotor:** An oral medication that helps prevent red blood cells from sickling.</li>
+            <li>**Blood transfusions:** Regular or occasional transfusions can help prevent stroke, acute chest syndrome, and severe anemia.</li>
+            <li>**Vaccinations and antibiotics:** To prevent infections, especially in young children. Penicillin prophylaxis is often given to infants and young children.</li>
+            <li>**Management of complications:** Prompt treatment for infections, acute chest syndrome, stroke, and other complications.</li>
+            <li>**Hydroxyurea:** A medication that can reduce the frequency and severity of pain crises, acute chest syndrome, and the need for blood transfusions in some people with SCD.</li>
+            <li>**Bone marrow (stem cell) transplantation:** A potentially curative treatment option for a small number of individuals with severe SCD, usually children with a matched sibling donor.</li>
+            <li>**Gene therapy:** Emerging therapies that aim to correct the faulty gene responsible for SCD. Several gene therapies are in clinical trials and some have been approved for certain individuals.</li>
+        </ul>
+        <p>
+            Comprehensive care for SCD often involves a team of healthcare professionals, including hematologists, nurses, pain specialists, social workers, and genetic counselors.
+        </p>
+
+        <h2>Living with Sickle Cell Disease</h2>
+        <p>
+            Living with SCD can be challenging, but with proper medical care, support, and self-management strategies, individuals can lead fulfilling lives. This includes:
+        </p>
+        <ul>
+            <li>Following the treatment plan closely.</li>
+            <li>Staying well-hydrated.</li>
+            <li>Avoiding extreme temperatures.</li>
+            <li>Managing stress.</li>
+            <li>Getting regular medical check-ups.</li>
+            <li>Seeking support from family, friends, and support groups.</li>
+        </ul>
+    </div>
+
+    <div class="support-and-resources-box">
+        <h2>Support and Resources</h2>
+        <p>
+            Organizations and resources offering support for individuals and families affected by sickle cell disease.
+        </p>
+        <ul>
+            <li>Sickle cell disease foundations and associations</li>
+            <li>Support groups and online communities</li>
+            <li>Information on treatment options and research</li>
+            <li>Resources for patients and families</li>
+            <li>Genetic counseling services</li>
+        </ul>
+    </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="section__container footer__container">
+            <div class="footer__col">
+                <h3>Health<span>Care</span></h3>
+                <p>
+                    We are honored to be a part of your healthcare journey and committed
+                    to delivering compassionate, personalized, and top-notch care every
+                    step of the way.
+                </p>
+                <p>
+                    Trust us with your health, and let us work together to achieve the
+                    best possible outcomes for you and your loved ones.
+                </p>
+            </div>
+            <div class="footer__col">
+                <h4> About Us</h4>
+                <p>Home</p>
+                <p>About Us</p>
+                <p>Work With Us</p>
+                <p>Our Blog</p>
+                <p>Terms & Conditions</p>
+            </div>
+            <div class="footer__col">
+                <h4>Services</h4>
+                <p>Search Terms</p>
+                <p>Advance Search</p>
+                <p>Privacy Policy</p>
+                <p>Suppliers</p>
+                <p>Our Stores</p>
+            </div>
+            <div class="footer__col">
+                <h4>Contact Us</h4>
+                <p>
+                    <i class="ri-map-pin-2-fill"></i> Vignan's Institute of Information Technology,Duvvada
+                </p>
+                <p><i class="ri-mail-fill"></i> support@care.com</p>
+                <p><i class="ri-phone-fill"></i> 0891-123-4567</p>
+            </div>
+        </div>
+        <div class="footer__bar">
+            <div class="footer__bar__content">
+                <p>Copyright © . All rights reserved.</p>
+                <div class="footer__socials">
+                    <span><i class="ri-instagram-line"></i></span>
+                    <span><i class="ri-facebook-fill"></i></span>
+                    <span><i class="ri-heart-fill"></i></span>
+                    <span><i class="ri-twitter-fill"></i></span>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

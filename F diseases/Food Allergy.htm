@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="icon" type="image/png" href="/Medics/Photos/Medics.png">
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css"
+      rel="stylesheet"
+    /><link rel="icon" type="image/png" href="/Medics/Photos/Medics.png">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/Medics/styles.css" />
+    <title>Food Allergy</title>
+    <style>
+        
+        body {
+            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            background-color: #f4f9f9;
+            margin: 0;
+            padding: 0; /* Remove default body padding */
+            color: #333;
+            display: flex;
+            flex-direction: column; /* Stack header, main content, and footer */
+            min-height: 100vh; /* Ensure the body takes at least the full viewport height */
+        }
+
+    
+
+        .nav__container {
+            max-width: var(--max-width);
+            margin: 0 auto; /* Center the navbar */
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .nav__logo {
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: var(--white);
+        }
+
+        .nav__logo span {
+            color: var(--secondary-color);
+        }
+
+        .nav__links {
+            list-style: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 2rem;
+        }
+
+        .link a {
+            padding: 0.5rem;
+            color: var(--primary-color-light);
+        }
+
+        .link a:hover {
+            color: var(--white);
+        }
+
+        .btn {
+            padding: 0.75rem 2rem;
+            outline: none;
+            border: none;
+            font-size: 1rem;
+            white-space: nowrap;
+            color: var(--white);
+            background-color: var(--secondary-color);
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .main-content {
+            display: flex;
+            max-width: 1200px;
+            margin: 30px auto; /* Center the main content with top/bottom margin */
+            padding: 0 30px; /* Add horizontal padding for the main content */
+            gap: 80px;
+            flex-grow: 1; /* Allow main content to grow and push footer down */
+        }
+
+        .container {
+            max-width: 700px;
+            background-color: white;
+            padding: 30px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        h1 {
+            color: #00695c;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        h2 {
+            color: #46BCA6;
+            margin-top: 30px;
+            margin-bottom: 10px;
+        }
+
+        p {
+            margin-bottom: 15px;
+        }
+
+        ul {
+            margin-left: 20px;
+        }
+
+        .treatment-box {
+            background-color: #e8f5e9; /* Light green background */
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+            width: 300px; /* Fixed width for the box */
+            position: sticky; /* Keep it visible while scrolling */
+            top: 20px; /* Adjust as needed */
+            align-self: flex-start; /* Align to the top of the container */
+        }
+
+        .treatment-box h2 {
+            color: #388e3c; /* Darker green for heading */
+            margin-top: 0;
+        }
+
+
+        @media (max-width: 768px) {
+            .main-content {
+                flex-direction: column; /* Stack main content and treatment box */
+                padding: 0 20px;
+                gap: 30px;
+            }
+
+            .treatment-box {
+                width: 100%; /* Make the box full width */
+                position: static; /* No sticky positioning */
+                margin-top: 20px; /* Add some top margin */
+            }
+
+            .container {
+                max-width: 100%; /* Make container full width on smaller screens */
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="section__container nav__container">
+            <div class="nav__logo">Med<span>ics</span></div>
+              <img src="/Medics/Photos/WhatsApp Image 2025-05-07 at 21.07.38.jpeg" id="pic">
+        <ul class="nav__links">
+              <li class="link"><a href="/Medics/index.html">Home</a></li>
+                <li class="link"><a href="/Medics/About Us.html">About Us</a></li>
+                <li class="link"><a href="/Medics/A-Z.html">Services</a></li>
+                <li class="link"><a href="/Medics/search.htm">Search</a></li>
+            </ul>
+            <button class="btn">Contact Us</button>
+            </nav>
+    </header>
+    <div class="main-content">
+        <div class="container">
+		<h1>Food Allergy</h1>
+
+        <h2>About Food Allergy</h2>
+        <p>
+            A food allergy is an immune system reaction that occurs when a person eats a certain food. The body mistakenly identifies a harmless food protein as a threat and produces antibodies to fight it. When the person eats that food again, the antibodies release chemicals, causing allergy symptoms.
+        </p>
+        <p>
+            Food allergies can range from mild to severe, and some reactions can be life-threatening (anaphylaxis). It's important to distinguish between a food allergy and a food intolerance. Food intolerance does not involve the immune system and is generally less severe.
+        </p>
+
+        <h2>Symptoms of Food Allergy</h2>
+        <p>
+            Food allergy symptoms can appear within a few minutes to a few hours after eating the offending food. Symptoms can vary but may include:
+        </p>
+        <ul>
+            <li>Skin reactions:
+                <ul>
+                    <li>Hives (itchy, raised bumps)</li>
+                    <li>Eczema (red, itchy skin)</li>
+                    <li>Swelling (especially of the face, lips, tongue, or throat)</li>
+                    <li>Itching</li>
+                </ul>
+            </li>
+            <li>Gastrointestinal symptoms:
+                <ul>
+                    <li>Nausea</li>
+                    <li>Vomiting</li>
+                    <li>Abdominal cramps</li>
+                    <li>Diarrhea</li>
+                </ul>
+            </li>
+            <li>Respiratory symptoms:
+                <ul>
+                    <li>Sneezing</li>
+                    <li>Runny nose</li>
+                    <li>Wheezing</li>
+                    <li>Coughing</li>
+                    <li>Shortness of breath</li>
+                    <li>Chest tightness</li>
+                </ul>
+            </li>
+            <li>Cardiovascular symptoms:
+                <ul>
+                    <li>Dizziness</li>
+                    <li>Lightheadedness</li>
+                    <li>Fainting</li>
+                </ul>
+            </li>
+            <li>Anaphylaxis: A severe, potentially life-threatening reaction that can involve multiple body systems. Symptoms include:
+                <ul>
+                    <li>Difficulty breathing</li>
+                    <li>Swelling of the throat</li>
+                    <li>Rapid heartbeat</li>
+                    <li>Hives</li>
+                    <li>Low blood pressure</li>
+                    <li>Loss of consciousness</li>
+                </ul>
+            </li>
+        </ul>
+
+        <h2>Common Food Allergens</h2>
+        <p>
+            While any food can cause an allergic reaction, eight foods account for most food allergies:
+        </p>
+        <ul>
+            <li>Milk</li>
+            <li>Eggs</li>
+            <li>Peanuts</li>
+            <li>Tree nuts (e.g., almonds, walnuts, pecans)</li>
+            <li>Soy</li>
+            <li>Wheat</li>
+            <li>Fish</li>
+            <li>Shellfish (e.g., crab, shrimp, lobster)</li>
+        </ul>
+        <p>
+            Other foods that can cause allergies include sesame, mustard, and certain fruits and vegetables.
+        </p>
+
+        <h2>Diagnosing Food Allergy</h2>
+        <p>
+            Diagnosing a food allergy typically involves a combination of:
+        </p>
+        <ul>
+            <li>Medical history: Your doctor will ask about your symptoms and when they occur.</li>
+            <li>Physical examination: Your doctor will look for signs of an allergic reaction.</li>
+            <li>Elimination diet: You may be asked to eliminate certain foods from your diet and then reintroduce them one at a time to see if they cause a reaction.</li>
+            <li>Skin prick test: A small amount of the suspected allergen is placed on your skin, and the skin is pricked. A raised bump indicates a possible allergy.</li>
+            <li>Blood test: Measures the level of specific IgE antibodies in your blood. High levels suggest an allergy.</li>
+            <li>Oral food challenge: Considered the gold standard for diagnosis. You eat small amounts of the suspected allergen under medical supervision and are monitored for a reaction.</li>
+        </ul>
+
+        <h2>Treating Food Allergy</h2>
+        <p>
+            The best way to manage a food allergy is to avoid the allergenic food entirely.
+        </p>
+        <p>
+            Other treatment options include:
+        </p>
+        <ul>
+            <li>Epinephrine: For severe reactions (anaphylaxis), an epinephrine auto-injector (e.g., EpiPen) is crucial. It should be administered immediately.</li>
+            <li>Antihistamines: Can help relieve mild symptoms like itching and hives.</li>
+            <li>Corticosteroids: May be used to treat severe or persistent symptoms.</li>
+            <li>Oral immunotherapy (OIT): A newer treatment that involves gradually increasing exposure to the allergen under medical supervision. It aims to desensitize the person to the allergen.</li>
+        </ul>
+
+        <h2>Prevention of Food Allergy Reactions</h2>
+        <p>
+            The most important aspect of preventing food allergy reactions is strict avoidance of the allergenic food. This involves:
+        </p>
+        <ul>
+            <li>Reading food labels carefully: Allergens must be listed on packaged foods.</li>
+            <li>Being cautious when eating out: Inform restaurant staff about your allergy and ask about ingredients.</li>
+            <li>Educating yourself and others: Make sure family members, friends, and caregivers know about the allergy and how to respond to a reaction.</li>
+            <li>Carrying an epinephrine auto-injector: If you have a severe allergy, always carry an epinephrine auto-injector and know how to use it.</li>
+        </ul>
+
+        <h2>Living with a Food Allergy</h2>
+        <p>
+            Living with a food allergy requires careful management and vigilance. Here are some tips:
+        </p>
+        <ul>
+            <li>Work with an allergist: An allergist can provide guidance on managing your allergy and developing an emergency plan.</li>
+            <li>Create an action plan: This plan should outline what to do in case of a reaction.</li>
+            <li>Wear a medical alert bracelet: This can inform others about your allergy in case of an emergency.</li>
+            <li>Join a support group: Connecting with others who have food allergies can provide emotional support and practical advice.</li>
+        </ul>
+    </div>
+
+    <div class="treatment-box">
+        <h2>Treating Food Allergy</h2>
+        <p>
+            The best way to manage a food allergy is to avoid the allergenic food entirely.
+        </p>
+        <ul>
+            <li>Epinephrine (for severe reactions)</li>
+            <li>Antihistamines (for mild symptoms)</li>
+            <li>Corticosteroids (for severe/persistent symptoms)</li>
+            <li>Oral immunotherapy (OIT)</li>
+        </ul>
+        <h2>Prevention</h2>
+        <ul>
+            <li>Strict avoidance of the allergenic food</li>
+            <li>Reading food labels carefully</li>
+            <li>Being cautious when eating out</li>
+            <li>Educating yourself and others</li>
+            <li>Carrying an epinephrine auto-injector (if needed)</li>
+        </ul>
+    </div>						
+                    </div>
+    </div>
+    <footer class="footer">
+        <div class="section__container footer__container">
+            <div class="footer__col">
+                <h3>Health<span>Care</span></h3>
+                <p>
+                    We are honored to be a part of your healthcare journey and committed
+                    to delivering compassionate, personalized, and top-notch care every
+                    step of the way.
+                </p>
+                <p>
+                    Trust us with your health, and let us work together to achieve the
+                    best possible outcomes for you and your loved ones.
+                </p>
+            </div>
+            <div class="footer__col">
+                <h4> About Us</h4>
+                <p>Home</p>
+                <p>About Us</p>
+                <p>Work With Us</p>
+                <p>Our Blog</p>
+                <p>Terms & Conditions</p>
+            </div>
+            <div class="footer__col">
+                <h4>Services</h4>
+                <p>Search Terms</p>
+                <p>Advance Search</p>
+                <p>Privacy Policy</p>
+                <p>Suppliers</p>
+                <p>Our Stores</p>
+            </div>
+            <div class="footer__col">
+                <h4>Contact Us</h4>
+                <p>
+                    <i class="ri-map-pin-2-fill"></i> Vignan's Institute of Information Technology,Duvvada
+                </p>
+                <p><i class="ri-mail-fill"></i> support@care.com</p>
+                <p><i class="ri-phone-fill"></i> 0891-123-4567</p>
+            </div>
+        </div>
+        <div class="footer__bar">
+            <div class="footer__bar__content">
+                <p>Copyright © . All rights reserved.</p>
+                <div class="footer__socials">
+                    <span><i class="ri-instagram-line"></i></span>
+                    <span><i class="ri-facebook-fill"></i></span>
+                    <span><i class="ri-heart-fill"></i></span>
+                    <span><i class="ri-twitter-fill"></i></span>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

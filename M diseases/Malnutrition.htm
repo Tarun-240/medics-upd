@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="icon" type="image/png" href="/Medics/Photos/Medics.png">
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css"
+      rel="stylesheet"
+    /><link rel="icon" type="image/png" href="/Medics/Photos/Medics.png">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/Medics/styles.css" />
+    <title>Malnutrition</title>
+    <style>
+        
+        body {
+            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            background-color: #f4f9f9;
+            margin: 0;
+            padding: 0; /* Remove default body padding */
+            color: #333;
+            display: flex;
+            flex-direction: column; /* Stack header, main content, and footer */
+            min-height: 100vh; /* Ensure the body takes at least the full viewport height */
+        }
+
+    
+
+        .nav__container {
+            max-width: var(--max-width);
+            margin: 0 auto; /* Center the navbar */
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .nav__logo {
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: var(--white);
+        }
+
+        .nav__logo span {
+            color: var(--secondary-color);
+        }
+
+        .nav__links {
+            list-style: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 2rem;
+        }
+
+        .link a {
+            padding: 0.5rem;
+            color: var(--primary-color-light);
+        }
+
+        .link a:hover {
+            color: var(--white);
+        }
+
+        .btn {
+            padding: 0.75rem 2rem;
+            outline: none;
+            border: none;
+            font-size: 1rem;
+            white-space: nowrap;
+            color: var(--white);
+            background-color: var(--secondary-color);
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .main-content {
+            display: flex;
+            max-width: 1200px;
+            margin: 30px auto; /* Center the main content with top/bottom margin */
+            padding: 0 30px; /* Add horizontal padding for the main content */
+            gap: 80px;
+            flex-grow: 1; /* Allow main content to grow and push footer down */
+        }
+
+        .container {
+            max-width: 700px;
+            background-color: white;
+            padding: 30px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        h1 {
+            color: #00695c;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        h2 {
+            color: #46BCA6;
+            margin-top: 30px;
+            margin-bottom: 10px;
+        }
+
+        p {
+            margin-bottom: 15px;
+        }
+
+        ul {
+            margin-left: 20px;
+        }
+  
+
+        .treatment-box {
+            background-color: #e8f5e9; /* Light green background */
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+            width: 300px; /* Fixed width for the box */
+            position: sticky; /* Keep it visible while scrolling */
+            top: 20px; /* Adjust as needed */
+            align-self: flex-start; /* Align to the top of the container */
+        }
+
+        .treatment-box h2 {
+            color: #388e3c; /* Darker green for heading */
+            margin-top: 0;
+        }
+
+
+        @media (max-width: 768px) {
+            .main-content {
+                flex-direction: column; /* Stack main content and treatment box */
+                padding: 0 20px;
+                gap: 30px;
+            }
+
+            .treatment-box {
+                width: 100%; /* Make the box full width */
+                position: static; /* No sticky positioning */
+                margin-top: 20px; /* Add some top margin */
+            }
+
+            .container {
+                max-width: 100%; /* Make container full width on smaller screens */
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="section__container nav__container">
+            <div class="nav__logo">Med<span>ics</span></div>
+              <img src="/Medics/Photos/WhatsApp Image 2025-05-07 at 21.07.38.jpeg" id="pic">
+        <ul class="nav__links">
+              <li class="link"><a href="/Medics/index.html">Home</a></li>
+                <li class="link"><a href="/Medics/About Us.html">About Us</a></li>
+                <li class="link"><a href="/Medics/A-Z.html">Services</a></li>
+                <li class="link"><a href="/Medics/search.htm">Search</a></li>
+            </ul>
+            <button class="btn">Contact Us</button>
+            </nav>
+    </header>
+    <div class="main-content">
+        <div class="container">
+        <h1>Malnutrition</h1>
+
+        <h2>Understanding Malnutrition</h2>
+        <p>
+            Malnutrition refers to deficiencies, excesses, or imbalances in a person's intake of energy and/or nutrients. It encompasses two broad groups of conditions. One is 'undernutrition' — which includes stunting (low height for age), wasting (low weight for height), underweight (low weight for age), and micronutrient deficiencies (a lack of important vitamins and minerals). The other is overweight, obesity, and diet-related noncommunicable diseases (such as heart disease, stroke, diabetes, and some cancers). This information focuses primarily on undernutrition.
+        </p>
+        <p>
+            Undernutrition can result from inadequate intake of nutrients, malabsorption (where the body can't properly absorb nutrients), or excessive nutrient loss. It can affect people of all ages but is particularly serious for young children, pregnant women, and the elderly.
+        </p>
+
+        <h2>Common Symptoms of Malnutrition</h2>
+        <p>
+            Symptoms of malnutrition can vary depending on the type and severity of nutrient deficiencies. Some common signs and symptoms include:
+        </p>
+        <ul>
+            <li>Weight loss</li>
+            <li>Fatigue and weakness</li>
+            <li>Reduced muscle mass</li>
+            <li>Swelling (edema), especially in the ankles, feet, and abdomen</li>
+            <li>Dry, scaly skin</li>
+            <li>Hair loss or thinning</li>
+            <li>Brittle nails</li>
+            <li>Pale skin</li>
+            <li>Increased susceptibility to infections</li>
+            <li>Delayed wound healing</li>
+            <li>Irritability and difficulty concentrating</li>
+            <li>Stunted growth in children</li>
+        </ul>
+        <p>
+            Specific micronutrient deficiencies can lead to additional symptoms. For example, iron deficiency can cause anemia, leading to fatigue and shortness of breath. Vitamin D deficiency can lead to bone pain and weakness.
+        </p>
+
+        <h2>Common Causes and Risk Factors of Undernutrition</h2>
+        <p>
+            Undernutrition can be caused by a variety of factors, including:
+        </p>
+        <ul>
+            <li>**Inadequate Food Intake:** Poverty, food insecurity, lack of access to nutritious foods, and restrictive dieting.</li>
+            <li>**Poor Dietary Diversity:** Consuming a limited range of foods, leading to deficiencies in essential nutrients.</li>
+            <li>**Malabsorption:** Conditions that interfere with the body's ability to absorb nutrients from food, such as Crohn's disease, celiac disease, and chronic diarrhea.</li>
+            <li>**Increased Nutrient Needs:** Certain life stages (pregnancy, lactation, infancy, adolescence) and medical conditions (chronic infections, cancer, injury, surgery) can increase the body's need for nutrients.</li>
+            <li>**Infections:** Infections can reduce appetite, impair nutrient absorption, and increase nutrient losses.</li>
+            <li>**Chronic Diseases:** Conditions like HIV/AIDS, tuberculosis, and chronic kidney disease can lead to malnutrition.</li>
+            <li>**Eating Disorders:** Anorexia nervosa and bulimia nervosa are psychological disorders that result in severe nutritional deficiencies.</li>
+            <li>**Social Isolation and Mental Health Issues:** Depression and social isolation can affect appetite and food intake, particularly in older adults.</li>
+            <li>**Limited Access to Healthcare and Nutrition Education:** Lack of awareness about healthy eating and limited access to healthcare professionals can contribute to malnutrition.</li>
+        </ul>
+
+        <h2>Diagnosis of Malnutrition</h2>
+        <p>
+            Diagnosing malnutrition involves a comprehensive assessment that may include:
+        </p>
+        <ul>
+            <li>**Medical History and Physical Examination:** The doctor will ask about dietary habits, weight changes, symptoms, and medical history. A physical exam will look for signs of malnutrition.</li>
+            <li>**Anthropometric Measurements:** Assessing body size and composition, including weight, height, body mass index (BMI), waist circumference, and skinfold thickness. In children, measurements like height-for-age, weight-for-age, and weight-for-height are used to identify stunting, underweight, and wasting.</li>
+            <li>**Biochemical Tests:** Blood and urine tests can help assess levels of specific nutrients, proteins (like albumin and prealbumin), electrolytes, and markers of inflammation.</li>
+            <li>**Dietary Assessment:** Evaluating food intake through methods like food diaries, 24-hour recalls, or food frequency questionnaires to identify nutrient deficiencies or excesses.</li>
+            <li>**Functional Assessments:** Evaluating muscle strength, grip strength, and overall physical function, which can be affected by malnutrition.</li>
+        </ul>
+
+        <h2>Treatment and Management of Malnutrition</h2>
+        <p>
+            The primary goal of treating malnutrition is to restore adequate nutritional status, address underlying causes, and manage complications. Treatment strategies may include:
+        </p>
+        <ul>
+            <li>**Dietary Modifications:** Increasing overall calorie and nutrient intake through balanced meals. This may involve dietary counseling and education to promote healthy food choices and meal planning.</li>
+            <li>**Oral Nutritional Supplements (ONS):** Providing concentrated sources of calories, protein, vitamins, and minerals in liquid or powder form to supplement dietary intake.</li>
+            <li>**Enteral Nutrition (Tube Feeding):** Delivering liquid nutrition directly into the stomach or small intestine through a feeding tube when oral intake is insufficient or unsafe.</li>
+            <li>**Parenteral Nutrition (Intravenous Feeding):** Providing nutrients directly into the bloodstream when the gastrointestinal tract is not functioning properly. This is usually reserved for severe cases.</li>
+            <li>**Micronutrient Supplementation:** Providing specific vitamins and minerals (e.g., iron, vitamin D, vitamin A, zinc) to correct deficiencies.</li>
+            <li>**Treatment of Underlying Conditions:** Addressing any medical conditions or infections that are contributing to malnutrition.</li>
+            <li>**Appetite Stimulants:** Medications may be used in some cases to improve appetite.</li>
+            <li>**Nutritional Support Teams:** A multidisciplinary team including doctors, dietitians, nurses, and other healthcare professionals can provide comprehensive nutritional care.</li>
+        </ul>
+        <p>
+            Recovery from malnutrition can take time and requires ongoing monitoring and support. It's crucial to address both the nutritional deficiencies and the underlying causes to prevent recurrence.
+        </p>
+    </div>
+
+    <div class="support-and-recovery-box">
+        <h2>Support for Nutritional Health</h2>
+        <p>
+            Resources for improving and maintaining good nutrition.
+        </p>
+        <ul>
+            <li>Registered Dietitians for personalized advice</li>
+            <li>Nutrition education programs</li>
+            <li>Support groups for specific dietary needs</li>
+            <li>Information on food security resources</li>
+            <li>Healthcare providers for medical management</li>
+        </ul>
+    </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="section__container footer__container">
+            <div class="footer__col">
+                <h3>Health<span>Care</span></h3>
+                <p>
+                    We are honored to be a part of your healthcare journey and committed
+                    to delivering compassionate, personalized, and top-notch care every
+                    step of the way.
+                </p>
+                <p>
+                    Trust us with your health, and let us work together to achieve the
+                    best possible outcomes for you and your loved ones.
+                </p>
+            </div>
+            <div class="footer__col">
+                <h4> About Us</h4>
+                <p>Home</p>
+                <p>About Us</p>
+                <p>Work With Us</p>
+                <p>Our Blog</p>
+                <p>Terms & Conditions</p>
+            </div>
+            <div class="footer__col">
+                <h4>Services</h4>
+                <p>Search Terms</p>
+                <p>Advance Search</p>
+                <p>Privacy Policy</p>
+                <p>Suppliers</p>
+                <p>Our Stores</p>
+            </div>
+            <div class="footer__col">
+                <h4>Contact Us</h4>
+                <p>
+                    <i class="ri-map-pin-2-fill"></i> Vignan's Institute of Information Technology,Duvvada
+                </p>
+                <p><i class="ri-mail-fill"></i> support@care.com</p>
+                <p><i class="ri-phone-fill"></i> 0891-123-4567</p>
+            </div>
+        </div>
+        <div class="footer__bar">
+            <div class="footer__bar__content">
+                <p>Copyright © . All rights reserved.</p>
+                <div class="footer__socials">
+                    <span><i class="ri-instagram-line"></i></span>
+                    <span><i class="ri-facebook-fill"></i></span>
+                    <span><i class="ri-heart-fill"></i></span>
+                    <span><i class="ri-twitter-fill"></i></span>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="icon" type="image/png" href="/Medics/Photos/Medics.png">
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css"
+      rel="stylesheet"
+    /><link rel="icon" type="image/png" href="/Medics/Photos/Medics.png">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/Medics/styles.css" />
+    <title>Food Poisoning</title>
+    <style>
+        
+        body {
+            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            background-color: #f4f9f9;
+            margin: 0;
+            padding: 0; /* Remove default body padding */
+            color: #333;
+            display: flex;
+            flex-direction: column; /* Stack header, main content, and footer */
+            min-height: 100vh; /* Ensure the body takes at least the full viewport height */
+        }
+
+    
+
+        .nav__container {
+            max-width: var(--max-width);
+            margin: 0 auto; /* Center the navbar */
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .nav__logo {
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: var(--white);
+        }
+
+        .nav__logo span {
+            color: var(--secondary-color);
+        }
+
+        .nav__links {
+            list-style: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 2rem;
+        }
+
+        .link a {
+            padding: 0.5rem;
+            color: var(--primary-color-light);
+        }
+
+        .link a:hover {
+            color: var(--white);
+        }
+
+        .btn {
+            padding: 0.75rem 2rem;
+            outline: none;
+            border: none;
+            font-size: 1rem;
+            white-space: nowrap;
+            color: var(--white);
+            background-color: var(--secondary-color);
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .main-content {
+            display: flex;
+            max-width: 1200px;
+            margin: 30px auto; /* Center the main content with top/bottom margin */
+            padding: 0 30px; /* Add horizontal padding for the main content */
+            gap: 80px;
+            flex-grow: 1; /* Allow main content to grow and push footer down */
+        }
+
+        .container {
+            max-width: 700px;
+            background-color: white;
+            padding: 30px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        h1 {
+            color: #00695c;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        h2 {
+            color: #46BCA6;
+            margin-top: 30px;
+            margin-bottom: 10px;
+        }
+
+        p {
+            margin-bottom: 15px;
+        }
+
+        ul {
+            margin-left: 20px;
+        }
+
+        .treatment-box {
+            background-color: #e8f5e9; /* Light green background */
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+            width: 300px; /* Fixed width for the box */
+            position: sticky; /* Keep it visible while scrolling */
+            top: 20px; /* Adjust as needed */
+            align-self: flex-start; /* Align to the top of the container */
+        }
+
+        .treatment-box h2 {
+            color: #388e3c; /* Darker green for heading */
+            margin-top: 0;
+        }
+
+
+        @media (max-width: 768px) {
+            .main-content {
+                flex-direction: column; /* Stack main content and treatment box */
+                padding: 0 20px;
+                gap: 30px;
+            }
+
+            .treatment-box {
+                width: 100%; /* Make the box full width */
+                position: static; /* No sticky positioning */
+                margin-top: 20px; /* Add some top margin */
+            }
+
+            .container {
+                max-width: 100%; /* Make container full width on smaller screens */
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="section__container nav__container">
+            <div class="nav__logo">Med<span>ics</span></div>
+              <img src="/Medics/Photos/WhatsApp Image 2025-05-07 at 21.07.38.jpeg" id="pic">
+        <ul class="nav__links">
+              <li class="link"><a href="/Medics/index.html">Home</a></li>
+                <li class="link"><a href="/Medics/About Us.html">About Us</a></li>
+                <li class="link"><a href="/Medics/A-Z.html">Services</a></li>
+                <li class="link"><a href="/Medics/search.htm">Search</a></li>
+            </ul>
+            <button class="btn">Contact Us</button>
+            </nav>
+    </header>
+    <div class="main-content">
+        <div class="container">
+		<h1>Food Poisoning</h1>
+
+        <h2>About Food Poisoning</h2>
+        <p>
+            Food poisoning, also known as foodborne illness, is an illness caused by consuming contaminated food or drink.  Infectious organisms — including bacteria, viruses, and parasites — or their toxins are the most common causes of food poisoning.
+        </p>
+        <p>
+            Food poisoning can cause a variety of symptoms, most of which are unpleasant but not life-threatening. However, in some cases, food poisoning can lead to serious complications.
+        </p>
+
+        <h2>Symptoms of Food Poisoning</h2>
+        <p>
+            Symptoms of food poisoning can vary depending on the cause, but common symptoms include:
+        </p>
+        <ul>
+            <li>Nausea</li>
+            <li>Vomiting</li>
+            <li>Diarrhea</li>
+            <li>Abdominal cramps</li>
+            <li>Fever</li>
+            <li>Headache</li>
+            <li>Weakness or fatigue</li>
+        </ul>
+        <p>
+            Symptoms may start within a few hours of eating the contaminated food, or they may take several days to appear.  The duration of symptoms can also vary, lasting from a few hours to several days.
+        </p>
+
+        <h2>Causes of Food Poisoning</h2>
+        <p>
+            Food can become contaminated at any point during production, processing, or preparation. Common causes of food poisoning include:
+        </p>
+        <ul>
+            <li>Bacteria:
+                <ul>
+                    <li>Salmonella: Often found in raw or undercooked poultry, eggs, and meat.</li>
+                    <li>Escherichia coli (E. coli): Can be found in raw or undercooked ground beef, raw vegetables, and unpasteurized milk.</li>
+                    <li>Campylobacter: Commonly associated with raw or undercooked poultry.</li>
+                    <li>Listeria: Can contaminate ready-to-eat foods like deli meats, hot dogs, and soft cheeses.</li>
+                    <li>Staphylococcus aureus: Can be introduced to food through improper handling.</li>
+                    <li>Clostridium perfringens: Often occurs in improperly cooked and reheated meats and stews.</li>
+                </ul>
+            </li>
+            <li>Viruses:
+                <ul>
+                    <li>Norovirus: A common cause of food poisoning, often spread through contaminated food or water, or person-to-person contact.</li>
+                    <li>Hepatitis A: Can be transmitted through contaminated food or water, especially raw or undercooked shellfish.</li>
+                </ul>
+            </li>
+            <li>Parasites:
+                <ul>
+                     <li>Toxoplasma gondii: Can be found in raw or undercooked meat.</li>
+                    <li>Cryptosporidium: Can be found in contaminated water or raw produce.</li>
+                    <li>Giardia:  Can be found in contaminated water or raw produce.</li>
+                </ul>
+            </li>
+            <li>Toxins:
+                <ul>
+                    <li>Certain bacteria, like Staphylococcus aureus and Clostridium botulinum, can produce toxins that cause illness, even if the bacteria themselves are no longer present.</li>
+                    <li>Some fish, like tuna and mackerel, can contain toxins if not properly refrigerated (scombroid poisoning).</li>
+                    <li>Shellfish can accumulate toxins produced by algae (shellfish poisoning).</li>
+                </ul>
+            </li>
+        </ul>
+
+        <h2>Diagnosing Food Poisoning</h2>
+        <p>
+            Food poisoning is often diagnosed based on your symptoms and a history of what you ate. In many cases, symptoms resolve on their own without specific treatment.
+        </p>
+        <p>
+            However, in more severe cases or if the cause is unclear, a doctor may perform tests, such as:
+        </p>
+        <ul>
+            <li>Stool culture: To identify bacteria, viruses, or parasites in your stool.</li>
+            <li>Blood tests: To check for signs of dehydration, electrolyte imbalance, or complications.</li>
+            <li>Urine tests: To assess kidney function and dehydration.</li>
+            <li>Food testing: In some cases, the suspected food may be tested to identify the cause of the contamination.</li>
+        </ul>
+
+        <h2>Treating Food Poisoning</h2>
+        <p>
+            Most cases of food poisoning are mild and can be treated at home. Treatment focuses on relieving symptoms and preventing dehydration.
+        </p>
+        <p>
+            Here are some general recommendations:
+        </p>
+        <ul>
+            <li>Hydration: Drink plenty of clear fluids, such as water, oral rehydration solutions (ORS), and clear broths, to replace fluids lost through vomiting and diarrhea.</li>
+            <li>Rest: Get plenty of rest to allow your body to recover.</li>
+            <li>Avoid solid foods: Until your symptoms improve, stick to bland, easy-to-digest foods like crackers, toast, and bananas.</li>
+            <li>Medications:
+                <ul>
+                    <li>Anti-diarrheal medications: Over-the-counter medications like loperamide (Imodium) or bismuth subsalicylate (Pepto-Bismol) may help to reduce diarrhea, but consult your doctor before using them, as they are not recommended for certain types of food poisoning.</li>
+                    <li>Anti-emetics: Medications to reduce nausea and vomiting may be prescribed by a doctor in severe cases.</li>
+                </ul>
+            </li>
+        </ul>
+
+        <h2>When to Seek Medical Attention</h2>
+        <p>
+            While most cases of food poisoning are mild, seek medical attention if you experience any of the following:
+        </p>
+        <ul>
+            <li>Severe dehydration: Symptoms include decreased urination, dizziness, and extreme thirst.</li>
+            <li>Bloody vomit or stool</li>
+            <li>High fever (above 102°F or 39°C)</li>
+            <li>Severe abdominal pain</li>
+            <li>Difficulty breathing</li>
+            <li>Neurological symptoms: Such as blurred vision, muscle weakness, or tingling.</li>
+            <li>Prolonged symptoms: Symptoms that last more than a few days.</li>
+            <li>Infants, elderly, pregnant women, and people with weakened immune systems are at higher risk for severe complications from food poisoning.</li>
+        </ul>
+
+        <h2>Preventing Food Poisoning</h2>
+        <p>
+            Preventing food poisoning involves practicing safe food handling, preparation, and storage. Here are some key steps:
+        </p>
+        <ul>
+            <li>Wash your hands thoroughly: Wash your hands with soap and water for at least 20 seconds before and after handling food, and after using the bathroom, changing diapers, or handling pets.</li>
+            <li>Separate raw and cooked foods: Use separate cutting boards and utensils for raw meat, poultry, and seafood, and cooked foods.</li>
+            <li>Cook foods to safe temperatures: Use a food thermometer to ensure that foods are cooked to the proper internal temperature.
+                <ul>
+                    <li>Poultry: 165°F (74°C)</li>
+                    <li>Ground meat: 160°F (71°C)</li>
+                    <li>Other meats: 145°F (63°C)</li>
+                    <li>Fish: 145°F (63°C)</li>
+                    <li>Eggs: 160°F (71°C)</li>
+                </ul>
+            </li>
+            <li>Refrigerate food promptly: Refrigerate perishable foods within two hours of purchase or preparation (or within one hour if the food has been exposed to temperatures above 90°F or 32°C).</li>
+            <li>Avoid raw or undercooked foods: Avoid eating raw or undercooked meat, poultry, seafood, and eggs.</li>
+            <li>Use pasteurized products: Drink only pasteurized milk, juice, and cider.</li>
+            <li>Wash produce thoroughly: Rinse raw fruits and vegetables under running water before eating, cutting, or cooking.</li>
+            <li>Be cautious when eating out: When eating at restaurants, choose establishments with good hygiene practices.</li>
+        </ul>
+    </div>
+
+    <div class="treatment-box">
+        <h2>Treating Food Poisoning</h2>
+        <p>
+            Most cases are mild and can be treated at home.
+        </p>
+        <ul>
+            <li>Hydration</li>
+            <li>Rest</li>
+            <li>Avoid solid foods (until symptoms improve)</li>
+            <li>Medications (in some cases):
+                <ul>
+                    <li>Anti-diarrheal medications (with caution)</li>
+                    <li>Anti-emetics (for severe cases, prescribed by doctor)</li>
+                </ul>
+            </li>
+        </ul>
+        <h2>When to Seek Medical Attention</h2>
+        <ul>
+            <li>Severe dehydration</li>
+            <li>Bloody vomit or stool</li>
+            <li>High fever</li>
+            <li>Severe abdominal pain</li>
+            <li>Difficulty breathing</li>
+            <li>Neurological symptoms</li>
+            <li>Prolonged symptoms</li>
+            <li>High-risk individuals</li>
+        </ul>
+    </div>						
+                    </div>
+    </div>
+    <footer class="footer">
+        <div class="section__container footer__container">
+            <div class="footer__col">
+                <h3>Health<span>Care</span></h3>
+                <p>
+                    We are honored to be a part of your healthcare journey and committed
+                    to delivering compassionate, personalized, and top-notch care every
+                    step of the way.
+                </p>
+                <p>
+                    Trust us with your health, and let us work together to achieve the
+                    best possible outcomes for you and your loved ones.
+                </p>
+            </div>
+            <div class="footer__col">
+                <h4> About Us</h4>
+                <p>Home</p>
+                <p>About Us</p>
+                <p>Work With Us</p>
+                <p>Our Blog</p>
+                <p>Terms & Conditions</p>
+            </div>
+            <div class="footer__col">
+                <h4>Services</h4>
+                <p>Search Terms</p>
+                <p>Advance Search</p>
+                <p>Privacy Policy</p>
+                <p>Suppliers</p>
+                <p>Our Stores</p>
+            </div>
+            <div class="footer__col">
+                <h4>Contact Us</h4>
+                <p>
+                    <i class="ri-map-pin-2-fill"></i> Vignan's Institute of Information Technology,Duvvada
+                </p>
+                <p><i class="ri-mail-fill"></i> support@care.com</p>
+                <p><i class="ri-phone-fill"></i> 0891-123-4567</p>
+            </div>
+        </div>
+        <div class="footer__bar">
+            <div class="footer__bar__content">
+                <p>Copyright © . All rights reserved.</p>
+                <div class="footer__socials">
+                    <span><i class="ri-instagram-line"></i></span>
+                    <span><i class="ri-facebook-fill"></i></span>
+                    <span><i class="ri-heart-fill"></i></span>
+                    <span><i class="ri-twitter-fill"></i></span>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

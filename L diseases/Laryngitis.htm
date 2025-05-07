@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="icon" type="image/png" href="/Medics/Photos/Medics.png">
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css"
+      rel="stylesheet"
+    /><link rel="icon" type="image/png" href="/Medics/Photos/Medics.png">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/Medics/styles.css" />
+    <title>Laryngitis</title>
+    <style>
+        
+        body {
+            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            background-color: #f4f9f9;
+            margin: 0;
+            padding: 0; /* Remove default body padding */
+            color: #333;
+            display: flex;
+            flex-direction: column; /* Stack header, main content, and footer */
+            min-height: 100vh; /* Ensure the body takes at least the full viewport height */
+        }
+
+    
+
+        .nav__container {
+            max-width: var(--max-width);
+            margin: 0 auto; /* Center the navbar */
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .nav__logo {
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: var(--white);
+        }
+
+        .nav__logo span {
+            color: var(--secondary-color);
+        }
+
+        .nav__links {
+            list-style: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 2rem;
+        }
+
+        .link a {
+            padding: 0.5rem;
+            color: var(--primary-color-light);
+        }
+
+        .link a:hover {
+            color: var(--white);
+        }
+
+        .btn {
+            padding: 0.75rem 2rem;
+            outline: none;
+            border: none;
+            font-size: 1rem;
+            white-space: nowrap;
+            color: var(--white);
+            background-color: var(--secondary-color);
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .main-content {
+            display: flex;
+            max-width: 1200px;
+            margin: 30px auto; /* Center the main content with top/bottom margin */
+            padding: 0 30px; /* Add horizontal padding for the main content */
+            gap: 80px;
+            flex-grow: 1; /* Allow main content to grow and push footer down */
+        }
+
+        .container {
+            max-width: 700px;
+            background-color: white;
+            padding: 30px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        h1 {
+            color: #00695c;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        h2 {
+            color: #46BCA6;
+            margin-top: 30px;
+            margin-bottom: 10px;
+        }
+
+        p {
+            margin-bottom: 15px;
+        }
+
+        ul {
+            margin-left: 20px;
+        }
+  
+
+        .treatment-box {
+            background-color: #e8f5e9; /* Light green background */
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+            width: 300px; /* Fixed width for the box */
+            position: sticky; /* Keep it visible while scrolling */
+            top: 20px; /* Adjust as needed */
+            align-self: flex-start; /* Align to the top of the container */
+        }
+
+        .treatment-box h2 {
+            color: #388e3c; /* Darker green for heading */
+            margin-top: 0;
+        }
+
+
+        @media (max-width: 768px) {
+            .main-content {
+                flex-direction: column; /* Stack main content and treatment box */
+                padding: 0 20px;
+                gap: 30px;
+            }
+
+            .treatment-box {
+                width: 100%; /* Make the box full width */
+                position: static; /* No sticky positioning */
+                margin-top: 20px; /* Add some top margin */
+            }
+
+            .container {
+                max-width: 100%; /* Make container full width on smaller screens */
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="section__container nav__container">
+            <div class="nav__logo">Med<span>ics</span></div>
+              <img src="/Medics/Photos/WhatsApp Image 2025-05-07 at 21.07.38.jpeg" id="pic">
+        <ul class="nav__links">
+              <li class="link"><a href="/Medics/index.html">Home</a></li>
+                <li class="link"><a href="/Medics/About Us.html">About Us</a></li>
+                <li class="link"><a href="/Medics/A-Z.html">Services</a></li>
+                <li class="link"><a href="/Medics/search.htm">Search</a></li>
+            </ul>
+            <button class="btn">Contact Us</button>
+            </nav>
+    </header>
+    <div class="main-content">
+        <div class="container">
+   <h1>Laryngitis</h1>
+
+        <h2>Understanding Laryngitis</h2>
+        <p>
+            Laryngitis is an inflammation of the larynx, commonly known as the voice box. This inflammation causes the vocal cords to swell, which can distort the sound produced by air passing over them, resulting in a hoarse voice, loss of voice, or a weak, scratchy throat. Laryngitis can be acute (short-term) or chronic (long-term).
+        </p>
+
+        <h2>Common Symptoms of Laryngitis</h2>
+        <p>
+            The primary symptom of laryngitis is a change in your voice. Other common symptoms include:
+        </p>
+        <ul>
+            <li>Hoarseness</li>
+            <li>Weak or breathy voice</li>
+            <li>Loss of voice (aphonia)</li>
+            <li>Sore throat</li>
+            <li>Dry or scratchy throat</li>
+            <li>Cough, often dry</li>
+            <li>Feeling the need to clear your throat frequently</li>
+        </ul>
+        <p>
+            In some cases, especially with acute laryngitis due to infection, you might also experience symptoms of a cold or flu, such as a runny nose, fever, or fatigue.
+        </p>
+
+        <h2>Common Causes of Laryngitis</h2>
+        <p>
+            Laryngitis can be caused by various factors:
+        </p>
+        <h3>Acute Laryngitis:</h3>
+        <ul>
+            <li>**Viral Infections:** These are the most common cause, often the same viruses that cause colds or the flu.</li>
+            <li>**Vocal Strain:** Overuse or misuse of your voice (e.g., yelling, singing loudly for a long time).</li>
+            <li>**Bacterial Infections:** Less common than viral infections, but can occur, sometimes as a secondary infection after a viral illness.</li>
+        </ul>
+        <h3>Chronic Laryngitis:</h3>
+        <ul>
+            <li>**Long-term Vocal Strain:** Chronic overuse or misuse of the voice.</li>
+            <li>**Exposure to Irritants:** Such as cigarette smoke, pollutants, and allergens.</li>
+            <li>**Acid Reflux (GERD):** Stomach acid backing up into the esophagus and throat can irritate the larynx.</li>
+            <li>**Chronic Coughing:** Persistent coughing can inflame the vocal cords.</li>
+            <li>**Sinusitis:** Chronic inflammation of the sinuses can lead to postnasal drip that irritates the larynx.</li>
+            <li>**Vocal Cord Nodules or Polyps:** These growths on the vocal cords can cause chronic hoarseness and inflammation.</li>
+        </ul>
+
+        <h2>When to Seek Medical Advice for Laryngitis</h2>
+        <p>
+            While most cases of acute laryngitis resolve on their own with rest and home care, you should see a doctor if you experience any of the following:
+        </p>
+        <ul>
+            <li>Difficulty breathing</li>
+            <li>High fever</li>
+            <li>Severe pain when swallowing</li>
+            <li>Coughing up blood</li>
+            <li>Hoarseness that lasts for more than two weeks (as this could indicate a more serious underlying condition)</li>
+            <li>A lump in your neck</li>
+        </ul>
+        <p>
+            These symptoms may indicate a more serious condition that requires medical attention.
+        </p>
+
+        <h2>Diagnosis of Laryngitis</h2>
+        <p>
+            A doctor can usually diagnose laryngitis based on your symptoms and a physical examination, which may include:
+        </p>
+        <ul>
+            <li>**Listening to your voice and breathing.**</li>
+            <li>**Examining your throat.**</li>
+            <li>**Laryngoscopy:** In some cases, especially for persistent hoarseness, a doctor may use a laryngoscope (a thin, flexible tube with a light and camera) to visualize the vocal cords.</li>
+        </ul>
+        <p>
+            Further tests are usually not needed for acute laryngitis. However, for chronic laryngitis, the doctor may investigate potential underlying causes like acid reflux or allergies.
+        </p>
+
+        <h2>Self-Care and Home Remedies for Laryngitis</h2>
+        <p>
+            The primary focus of treating acute laryngitis is to rest your voice and soothe your throat. Here are some self-care tips:
+        </p>
+        <ul>
+            <li>**Rest Your Voice:** Avoid talking or whispering as much as possible to allow your vocal cords to heal. Whispering can actually strain your vocal cords more than speaking softly.</li>
+            <li>**Stay Hydrated:** Drink plenty of fluids, especially warm liquids like herbal tea (non-caffeinated), broth, and warm water with honey and lemon. This helps keep your throat moist.</li>
+            <li>**Humidify the Air:** Use a humidifier or take steamy showers to moisten the air, which can help soothe an irritated throat.</li>
+            <li>**Avoid Irritants:** Stay away from cigarette smoke, alcohol, and other environmental irritants that can further inflame your larynx.</li>
+            <li>**Throat Lozenges or Hard Candy:** These can help soothe a sore throat and stimulate saliva production, which keeps the throat moist.</li>
+            <li>**Gargle with Salt Water:** Dissolve 1/4 to 1/2 teaspoon of salt in a glass of warm water and gargle several times a day. This can help reduce swelling and discomfort.</li>
+            <li>**Avoid Decongestants:** Over-the-counter decongestants can dry out your throat and vocal cords, which can worsen hoarseness.</li>
+        </ul>
+
+        <h2>Medical Treatment for Laryngitis</h2>
+        <p>
+            Medical treatment for laryngitis depends on the cause:
+        </p>
+        <ul>
+            <li>**Acute Viral Laryngitis:** Usually resolves on its own within a week or two with voice rest and supportive care. Antibiotics are not effective against viruses.</li>
+            <li>**Acute Bacterial Laryngitis:** If a bacterial infection is diagnosed, your doctor may prescribe antibiotics.</li>
+            <li>**Chronic Laryngitis:** Treatment focuses on addressing the underlying cause. This may involve:
+                <ul>
+                    <li>**Treating Acid Reflux (GERD):** Medications like antacids, H2 blockers, or proton pump inhibitors may be prescribed.</li>
+                    <li>**Managing Allergies:** Antihistamines or other allergy medications may be recommended.</li>
+                    <li>**Vocal Rest and Therapy:** A speech therapist can provide guidance on proper voice use and techniques to reduce strain.</li>
+                    <li>**Surgery:** In some cases, surgery may be needed to remove vocal cord nodules or polyps.</li>
+                </ul>
+            </li>
+        </ul>
+        <p>
+            It's important to follow your doctor's recommendations for treatment and to allow adequate time for your larynx to heal.
+        </p>
+    </div>
+
+    <div class="self-care-tips-box">
+        <h2>Self-Care for Laryngitis</h2>
+        <p>
+            Simple steps to help your voice recover.
+        </p>
+        <ul>
+            <li>Rest your voice</li>
+            <li>Stay hydrated</li>
+            <li>Use a humidifier</li>
+            <li>Avoid irritants like smoke</li>
+            <li>Soothe your throat with lozenges</li>
+            <li>Gargle with warm salt water</li>
+        </ul>
+    </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="section__container footer__container">
+            <div class="footer__col">
+                <h3>Health<span>Care</span></h3>
+                <p>
+                    We are honored to be a part of your healthcare journey and committed
+                    to delivering compassionate, personalized, and top-notch care every
+                    step of the way.
+                </p>
+                <p>
+                    Trust us with your health, and let us work together to achieve the
+                    best possible outcomes for you and your loved ones.
+                </p>
+            </div>
+            <div class="footer__col">
+                <h4> About Us</h4>
+                <p>Home</p>
+                <p>About Us</p>
+                <p>Work With Us</p>
+                <p>Our Blog</p>
+                <p>Terms & Conditions</p>
+            </div>
+            <div class="footer__col">
+                <h4>Services</h4>
+                <p>Search Terms</p>
+                <p>Advance Search</p>
+                <p>Privacy Policy</p>
+                <p>Suppliers</p>
+                <p>Our Stores</p>
+            </div>
+            <div class="footer__col">
+                <h4>Contact Us</h4>
+                <p>
+                    <i class="ri-map-pin-2-fill"></i> Vignan's Institute of Information Technology,Duvvada
+                </p>
+                <p><i class="ri-mail-fill"></i> support@care.com</p>
+                <p><i class="ri-phone-fill"></i> 0891-123-4567</p>
+            </div>
+        </div>
+        <div class="footer__bar">
+            <div class="footer__bar__content">
+                <p>Copyright © . All rights reserved.</p>
+                <div class="footer__socials">
+                    <span><i class="ri-instagram-line"></i></span>
+                    <span><i class="ri-facebook-fill"></i></span>
+                    <span><i class="ri-heart-fill"></i></span>
+                    <span><i class="ri-twitter-fill"></i></span>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
